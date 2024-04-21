@@ -3958,7 +3958,7 @@
 			(uuid "f8fac227-8788-45a6-a9b8-47d7f1bb8a48")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "#PWR010")
 					(unit 1)
@@ -4024,7 +4024,7 @@
 			(uuid "0a33fdeb-22aa-4aa5-9c2c-daabaf5b3c3c")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "#PWR02")
 					(unit 1)
@@ -4090,7 +4090,7 @@
 			(uuid "b11d8d9e-110d-4230-9767-dfe9985684ff")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "#PWR05")
 					(unit 1)
@@ -4125,7 +4125,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LiveWires:LW_CherrySwitch"
+		(property "Footprint" "LiveWires:LW_CherrySwitch_DrillMarks"
 			(at 52.07 62.23 0)
 			(effects
 				(font
@@ -4204,7 +4204,7 @@
 			(uuid "e5c53976-e0f5-4e92-a3f5-f52bdabd0787")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "SW9")
 					(unit 1)
@@ -4317,7 +4317,7 @@
 			(uuid "877763df-571d-45b3-bc54-a357dde127fd")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "D4")
 					(unit 1)
@@ -4353,7 +4353,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LiveWires:LW_CherrySwitch"
+		(property "Footprint" "LiveWires:LW_CherrySwitch_DrillMarks"
 			(at 199.39 115.57 0)
 			(effects
 				(font
@@ -4432,7 +4432,7 @@
 			(uuid "16bc3091-2314-4452-aecb-4fbbbcab94a7")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "SW5")
 					(unit 1)
@@ -4501,7 +4501,7 @@
 			(uuid "3b80e3f1-01bf-4972-93e5-34847a9acb56")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "C1")
 					(unit 1)
@@ -4566,7 +4566,7 @@
 			(uuid "91f85a4c-7634-4f6d-bdbd-cb3348839f45")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "#PWR015")
 					(unit 1)
@@ -4687,7 +4687,7 @@
 			(uuid "fc73c3e8-b36a-4ac8-abd8-36d773a00321")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "Q2")
 					(unit 1)
@@ -4800,7 +4800,7 @@
 			(uuid "877763df-571d-45b3-bc54-a357dde127fe")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "D1")
 					(unit 1)
@@ -4863,13 +4863,13 @@
 			)
 		)
 		(pin "2"
-			(uuid "16bc0b78-8dad-43ae-8cf9-555c70aee9f5")
+			(uuid "16bc0b78-8dad-43ae-8cf9-555c70aee9f6")
 		)
 		(pin "1"
-			(uuid "3b80e3f1-01bf-4972-93e5-34847a9acb56")
+			(uuid "3b80e3f1-01bf-4972-93e5-34847a9acb57")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "C2")
 					(unit 1)
@@ -4936,7 +4936,7 @@
 			(uuid "82832f78-a675-4c06-a433-812aa24679fd")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "R8")
 					(unit 1)
@@ -5049,7 +5049,7 @@
 			(uuid "877763df-571d-45b3-bc54-a357dde127ff")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "D2")
 					(unit 1)
@@ -5114,7 +5114,7 @@
 			(uuid "4657566a-1353-4c22-b1ee-2161598024d7")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "#PWR017")
 					(unit 1)
@@ -5180,7 +5180,7 @@
 			(uuid "765ab8cc-255c-4dca-9154-b0525d201491")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "#PWR04")
 					(unit 1)
@@ -5215,7 +5215,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LiveWires:LW_CherrySwitch"
+		(property "Footprint" "LiveWires:LW_CherrySwitch_DrillMarks"
 			(at 52.07 90.17 0)
 			(effects
 				(font
@@ -5294,7 +5294,7 @@
 			(uuid "f4d040e8-2ee7-4970-93e7-bf403083ed2e")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "SW3")
 					(unit 1)
@@ -5329,7 +5329,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LiveWires:LW_CherrySwitch"
+		(property "Footprint" "LiveWires:LW_CherrySwitch_DrillMarks"
 			(at 52.07 82.55 0)
 			(effects
 				(font
@@ -5408,7 +5408,7 @@
 			(uuid "d2993e96-a52e-48e1-a495-d6d7dba574fc")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "SW2")
 					(unit 1)
@@ -5529,7 +5529,7 @@
 			(uuid "fc73c3e8-b36a-4ac8-abd8-36d773a00322")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "Q3")
 					(unit 1)
@@ -5565,7 +5565,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LiveWires:LW_CherrySwitch"
+		(property "Footprint" "LiveWires:LW_CherrySwitch_DrillMarks"
 			(at 199.39 138.43 0)
 			(effects
 				(font
@@ -5644,7 +5644,7 @@
 			(uuid "16bc3091-2314-4452-aecb-4fbbbcab94a8")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "SW8")
 					(unit 1)
@@ -5709,7 +5709,7 @@
 			(uuid "f71baf29-7bf0-4b05-a05f-244004f7206a")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "#PWR06")
 					(unit 1)
@@ -5829,7 +5829,7 @@
 			(uuid "bbb97f34-39f4-4908-ad52-f8a743ead7ca")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "U2")
 					(unit 1)
@@ -5950,7 +5950,7 @@
 			(uuid "fc73c3e8-b36a-4ac8-abd8-36d773a00323")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "Q1")
 					(unit 1)
@@ -6015,7 +6015,7 @@
 			(uuid "fe7b18b8-f518-49e4-a2b0-444bc6c9760f")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "#PWR09")
 					(unit 1)
@@ -6080,7 +6080,7 @@
 			(uuid "f68b5e8d-5114-4b4c-94ec-1d7f986af9a7")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "#PWR012")
 					(unit 1)
@@ -6145,7 +6145,7 @@
 			(uuid "2e7ea53c-0240-46a3-8f12-8e36086621cd")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "#PWR07")
 					(unit 1)
@@ -6233,13 +6233,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "aa1ad300-1aa9-4e48-9f85-86ed1e105db4")
+			(uuid "aa1ad300-1aa9-4e48-9f85-86ed1e105db5")
 		)
 		(pin "2"
-			(uuid "82832f78-a675-4c06-a433-812aa24679fd")
+			(uuid "82832f78-a675-4c06-a433-812aa24679fe")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "R7")
 					(unit 1)
@@ -6305,7 +6305,7 @@
 			(uuid "e4f0e616-38d7-4884-bba5-135a99d6ac4f")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "#PWR08")
 					(unit 1)
@@ -6341,7 +6341,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LiveWires:LW_CherrySwitch"
+		(property "Footprint" "LiveWires:LW_CherrySwitch_DrillMarks"
 			(at 199.39 130.81 0)
 			(effects
 				(font
@@ -6420,7 +6420,7 @@
 			(uuid "16bc3091-2314-4452-aecb-4fbbbcab94a9")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "SW7")
 					(unit 1)
@@ -6481,13 +6481,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "aa1ad300-1aa9-4e48-9f85-86ed1e105db4")
+			(uuid "aa1ad300-1aa9-4e48-9f85-86ed1e105db6")
 		)
 		(pin "2"
-			(uuid "82832f78-a675-4c06-a433-812aa24679fd")
+			(uuid "82832f78-a675-4c06-a433-812aa24679ff")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "R6")
 					(unit 1)
@@ -6552,7 +6552,7 @@
 			(uuid "b1d6e35b-970d-41c6-8ffd-ffcb6df4920c")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "#PWR011")
 					(unit 1)
@@ -6617,7 +6617,7 @@
 			(uuid "b22cec2e-d7ef-4742-8b53-9478499a08f3")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "#PWR018")
 					(unit 1)
@@ -6652,7 +6652,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LiveWires:LW_CherrySwitch"
+		(property "Footprint" "LiveWires:LW_CherrySwitch_DrillMarks"
 			(at 52.07 97.79 0)
 			(effects
 				(font
@@ -6731,7 +6731,7 @@
 			(uuid "16bc3091-2314-4452-aecb-4fbbbcab94aa")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "SW4")
 					(unit 1)
@@ -6797,7 +6797,7 @@
 			(uuid "753413c0-6432-4574-9a3d-87ac4f403c63")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "#PWR03")
 					(unit 1)
@@ -6863,7 +6863,7 @@
 			(uuid "16dfc0b8-7cf4-48fd-a9d4-2648ca655b28")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "#PWR01")
 					(unit 1)
@@ -6931,7 +6931,7 @@
 			(uuid "6e1ec421-848f-4d8e-b1a4-f50dec9cf951")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "R4")
 					(unit 1)
@@ -6996,7 +6996,7 @@
 			(uuid "f24da9df-6f9e-4141-aa5f-b161b79a187e")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "#PWR016")
 					(unit 1)
@@ -7031,7 +7031,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LiveWires:LW_CherrySwitch"
+		(property "Footprint" "LiveWires:LW_CherrySwitch_DrillMarks"
 			(at 52.07 73.66 0)
 			(effects
 				(font
@@ -7110,7 +7110,7 @@
 			(uuid "1b98cb66-f00a-4cb8-a958-68a96f47ae76")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "SW1")
 					(unit 1)
@@ -7178,7 +7178,7 @@
 			(uuid "6e1ec421-848f-4d8e-b1a4-f50dec9cf952")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "R2")
 					(unit 1)
@@ -7246,7 +7246,7 @@
 			(uuid "6e1ec421-848f-4d8e-b1a4-f50dec9cf953")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "R1")
 					(unit 1)
@@ -7282,7 +7282,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LiveWires:LW_CherrySwitch"
+		(property "Footprint" "LiveWires:LW_CherrySwitch_DrillMarks"
 			(at 199.39 123.19 0)
 			(effects
 				(font
@@ -7361,7 +7361,7 @@
 			(uuid "16bc3091-2314-4452-aecb-4fbbbcab94ab")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "SW6")
 					(unit 1)
@@ -7597,7 +7597,7 @@
 			(uuid "68e3b348-c59a-4776-b6d9-171b94ad15c0")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "U1")
 					(unit 1)
@@ -7718,7 +7718,7 @@
 			(uuid "4962e9af-f8a7-4787-9833-0404ceb85bee")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "SW10")
 					(unit 1)
@@ -7786,7 +7786,7 @@
 			(uuid "6e1ec421-848f-4d8e-b1a4-f50dec9cf954")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "R3")
 					(unit 1)
@@ -7907,7 +7907,7 @@
 			(uuid "fc73c3e8-b36a-4ac8-abd8-36d773a00324")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "Q4")
 					(unit 1)
@@ -7972,7 +7972,7 @@
 			(uuid "61a2b61c-48fe-4381-8b9b-74e63b3868c9")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "#PWR013")
 					(unit 1)
@@ -8085,7 +8085,7 @@
 			(uuid "877763df-571d-45b3-bc54-a357dde12800")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "D3")
 					(unit 1)
@@ -8150,7 +8150,7 @@
 			(uuid "5a728bc7-41ee-440b-a115-4e20010915eb")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "#PWR014")
 					(unit 1)
@@ -8211,13 +8211,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "aa1ad300-1aa9-4e48-9f85-86ed1e105db4")
+			(uuid "aa1ad300-1aa9-4e48-9f85-86ed1e105db7")
 		)
 		(pin "2"
-			(uuid "82832f78-a675-4c06-a433-812aa24679fd")
+			(uuid "82832f78-a675-4c06-a433-812aa2467a00")
 		)
 		(instances
-			(project "macroboard-rev1"
+			(project "macropad-rev1"
 				(path "/e2f35591-d2a5-4370-be80-1eddbbb1c064"
 					(reference "R5")
 					(unit 1)
