@@ -4125,7 +4125,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LiveWires:LW_CherrySwitch_DrillMarks"
+		(property "Footprint" "LiveWires:LW_CherrySwitch"
 			(at 52.07 62.23 0)
 			(effects
 				(font
@@ -4353,7 +4353,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LiveWires:LW_CherrySwitch_DrillMarks"
+		(property "Footprint" "LiveWires:LW_CherrySwitch"
 			(at 199.39 115.57 0)
 			(effects
 				(font
@@ -5215,7 +5215,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LiveWires:LW_CherrySwitch_DrillMarks"
+		(property "Footprint" "LiveWires:LW_CherrySwitch"
 			(at 52.07 90.17 0)
 			(effects
 				(font
@@ -5329,7 +5329,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LiveWires:LW_CherrySwitch_DrillMarks"
+		(property "Footprint" "LiveWires:LW_CherrySwitch"
 			(at 52.07 82.55 0)
 			(effects
 				(font
@@ -5565,7 +5565,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LiveWires:LW_CherrySwitch_DrillMarks"
+		(property "Footprint" "LiveWires:LW_CherrySwitch"
 			(at 199.39 138.43 0)
 			(effects
 				(font
@@ -6341,7 +6341,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LiveWires:LW_CherrySwitch_DrillMarks"
+		(property "Footprint" "LiveWires:LW_CherrySwitch"
 			(at 199.39 130.81 0)
 			(effects
 				(font
@@ -6652,7 +6652,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LiveWires:LW_CherrySwitch_DrillMarks"
+		(property "Footprint" "LiveWires:LW_CherrySwitch"
 			(at 52.07 97.79 0)
 			(effects
 				(font
@@ -7031,7 +7031,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LiveWires:LW_CherrySwitch_DrillMarks"
+		(property "Footprint" "LiveWires:LW_CherrySwitch"
 			(at 52.07 73.66 0)
 			(effects
 				(font
@@ -7282,7 +7282,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LiveWires:LW_CherrySwitch_DrillMarks"
+		(property "Footprint" "LiveWires:LW_CherrySwitch"
 			(at 199.39 123.19 0)
 			(effects
 				(font
