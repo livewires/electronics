@@ -21,6 +21,12 @@ try:
     import keys
 except TypeError:
     dm.show_err("Can't import pages\nMissing comma?")
+    time.sleep(3)
+    
+try:
+    rotary_press_function = keys.rotary_press_function
+except Exception:
+    rotary_press_function = ConsumerControlCode.PLAY_PAUSE
     
     
 def swap_lines(kbd, layout):
