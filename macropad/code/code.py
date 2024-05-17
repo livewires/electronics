@@ -5,19 +5,75 @@ import rotaryio
 from collections import OrderedDict
 from adafruit_hid.keycode import Keycode
 
-
 import usb_hid
 from adafruit_hid.keyboard import Keyboard
 from adafruit_hid.keycode import Keycode
-from adafruit_hid.keyboard_layout_us import KeyboardLayoutUS
+from keyboard_layout_win_uk import KeyboardLayout
 from adafruit_hid.consumer_control import ConsumerControl
 from adafruit_hid.consumer_control_code import ConsumerControlCode
 
 from display_manager import DisplayManager
-from keys import pages, rotary_press_function
 
 dm = DisplayManager()
 dm.show_splash_screen()
+
+try:
+    import keys
+except TypeError:
+    dm.show_err("Can't import pages\nMissing comma?")
+    
+    
+def swap_lines(kbd, layout):
+    kbd.send(Keycode.HOME)
+    kbd.send(Keycode.SHIFT, Keycode.END)
+    kbd.send(Keycode.CONTROL, Keycode.X)
+    kbd.send(Keycode.UP_ARROW)
+    kbd.send(Keycode.HOME)
+    kbd.send(Keycode.CONTROL, Keycode.V)
+    kbd.send(Keycode.SHIFT, Keycode.END)
+    kbd.send(Keycode.CONTROL, Keycode.X)
+    kbd.send(Keycode.DOWN_ARROW)
+    kbd.send(Keycode.CONTROL, Keycode.V)
+    
+default_pages = (
+    (
+        "Function Keys", (
+            ("F13", Keycode.F13),
+            ("F14", Keycode.F14),
+            ("F15", Keycode.F15),
+            ("F16", Keycode.F16),
+            ("F17", Keycode.F17),
+            ("F18", Keycode.F18),
+            ("F19", Keycode.F19),
+            ("F20", Keycode.F20),
+        ),
+    ),
+    (
+        "Text Utils", (
+            ("S All", (Keycode.CONTROL, Keycode.A)),
+            ("SelLn", (Keycode.HOME, Keycode.SHIFT, Keycode.END)),
+            ("SwpLn", swap_lines),
+            ("Sign", "\n\nThanks,\nJoel Fergusson"),
+            ("Undo", (Keycode.CONTROL, Keycode.Z)),
+            ("Cut", (Keycode.CONTROL, Keycode.X)),
+            ("Copy", (Keycode.CONTROL, Keycode.C)),
+            ("Paste", (Keycode.CONTROL, Keycode.V)),
+        )
+    ),
+    (
+        "Gaming", (
+            ("Shoot", Keycode.ENTER),
+            ("  ^", Keycode.W),
+            ("Jump", Keycode.SPACE),
+            ("Chng", Keycode.I),
+            ("  <", Keycode.A),
+            ("  v", Keycode.S),
+            ("  >", Keycode.D),
+            ("Rload", Keycode.R),
+        ),
+    ),
+    
+)
 
 class Leds():
     def __init__(self, show_binary=True):
@@ -104,6 +160,25 @@ class Key():
         self.presses = presses
         self.kbd = keyboard
         self.layout = layout
+        
+        # Verify presses is sensible
+        if not isinstance(presses, (int, str, list, tuple)) \
+                and presses is not None \
+                and not callable(presses):
+            # Get the display manager. This is a bit dirty, should
+            # probably use a singleton or something
+            global dm
+            dm.show_err("Failed to set up\nkey {}".format(self.name))
+            time.sleep(3)
+            self.presses = None
+            
+        if isinstance(presses, (list, tuple)):
+            for press in presses:
+                if not isinstance(press, int):
+                    global dm
+                    dm.show_err("Failed to set up\nkey {} - bad element\nin list".format(self.name))
+                    time.sleep(3)
+                    self.presses = None
     
     def press(self):
         if isinstance(self.presses, str):
@@ -113,6 +188,15 @@ class Key():
         elif isinstance(self.presses, (list, tuple)):
             # This assumes any list or tuple is all integers from Keycode
             self.kbd.press(*self.presses)
+        elif callable(self.presses):
+            try:
+                self.presses(self.kbd, self.layout)
+            except Exception:
+                global dm
+                dm.show_err("Failed to run function\nfor key {}".format(self.name))
+                # No need for a sleep here, there's nothing that should
+                # overwrite the screen immediately.
+            
             
     def release(self):
         if isinstance(self.presses, int):
@@ -183,10 +267,18 @@ class PageManager():
 dm.set_loading_bar(21)
 kbd = Keyboard(usb_hid.devices)
 dm.set_loading_bar(42)
-layout = KeyboardLayoutUS(kbd)
+layout = KeyboardLayout(kbd)
 dm.set_loading_bar(63)
 cctl = ConsumerControl(usb_hid.devices)
 dm.set_loading_bar(84)
+
+
+try:
+    pages = keys.pages
+except Exception as e:
+    dm.show_err("User defined keys\nimport failed.\nLoading defaults...")
+    time.sleep(3)
+    pages = default_pages
 
 pm = PageManager(pages, kbd, layout)
 dm.set_loading_bar(105)
@@ -229,12 +321,9 @@ try:
         d = encoder.get_delta()
         while d:
             if d > 0:
-                print("Volume up")
                 cctl.send(ConsumerControlCode.VOLUME_INCREMENT)
                 d -= 1
             if d < 0:
-                
-                print("Volume down")
                 cctl.send(ConsumerControlCode.VOLUME_DECREMENT)
                 d += 1
         

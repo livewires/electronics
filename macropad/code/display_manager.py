@@ -41,5 +41,15 @@ class DisplayManager:
         self.disp.text(key_names[7], 96, 20, 1)
         self.disp.show()
         
+        
+    def show_err(self, err):
+        l = err.split("\n")
+        self.disp.fill(0)
+        self.disp.text(l[0], 0, 0, 1)
+        if len(l) > 1:
+            self.disp.text(l[1], 0, 10, 1)
+        if len(l) > 2:
+            self.disp.text(l[2], 0, 20, 1)
+        self.disp.show()
 
 
