@@ -12,11 +12,11 @@ class DisplayManager:
         self.disp.fill_rect(0, 25, n, 31, 1)
         self.disp.show()
         
-    def show_splash_screen(self):
+    def show_splash_screen(self, loading_bar=1):
         self.disp.fill(0)
         self.disp.text("LiveWires MacroPad", 0, 0, 1)
         self.disp.text("Loading...!", 10, 10, 1)
-        self.set_loading_bar(1)
+        self.set_loading_bar(loading_bar)
         self.disp.show()
         
     def centre_aligned_text(self, text, y):
@@ -44,12 +44,12 @@ class DisplayManager:
         
     def show_err(self, err):
         l = err.split("\n")
-        self.disp.fill(0)
-        self.disp.text(l[0], 0, 0, 1)
+        self.disp.fill(1)
+        self.disp.text(l[0], 1, 1, 0)
         if len(l) > 1:
-            self.disp.text(l[1], 0, 10, 1)
+            self.disp.text(l[1], 1, 11, 0)
         if len(l) > 2:
-            self.disp.text(l[2], 0, 20, 1)
+            self.disp.text(l[2], 1, 21, 0)
         self.disp.show()
 
 

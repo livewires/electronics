@@ -1,18 +1,32 @@
+"""
+LiveWires macropad main code.
+
+Author: Joel Fergusson
+Date: 2024-05-18
+
+Unless you want to dig into the Python, don't edit this file.
+
+If you want to change what the buttons do, edit keys.py
+
+For more information, see
+https://github.com/livewires/electronics
+"""
+
+
 import digitalio as io
 import board
 import time
 import rotaryio
-from collections import OrderedDict
 from adafruit_hid.keycode import Keycode
 
 import usb_hid
 from adafruit_hid.keyboard import Keyboard
 from adafruit_hid.keycode import Keycode
-from keyboard_layout_win_uk import KeyboardLayout
+from lib.keyboard_layout_win_uk import KeyboardLayout
 from adafruit_hid.consumer_control import ConsumerControl
 from adafruit_hid.consumer_control_code import ConsumerControlCode
 
-from display_manager import DisplayManager
+from lib.display_manager import DisplayManager
 
 dm = DisplayManager()
 dm.show_splash_screen()
@@ -21,65 +35,27 @@ try:
     import keys
 except TypeError:
     dm.show_err("Can't import pages\nMissing comma?")
-    time.sleep(3)
+    time.sleep(5)
+except NameError:
+    dm.show_err("Can't import pages\nCheck spelling incl.\ncapital letters")
+    time.sleep(5)
+except IndentationError:
+    dm.show_err("Can't import pages\nSomething wrong with\nindentation.")
+    time.sleep(5)
+except SyntaxError:
+    dm.show_err("Can't import pages\nSyntax error: some \ninvalid Python.")
+    time.sleep(5)
+except Exception as e:
+    dm.show_err("Can't import pages\nUnexpected error:\n{}".format(type(e).__name__))
+    time.sleep(5)
+    
+dm.show_splash_screen()
     
 try:
     rotary_press_function = keys.rotary_press_function
 except Exception:
     rotary_press_function = ConsumerControlCode.PLAY_PAUSE
-    
-    
-def swap_lines(kbd, layout):
-    kbd.send(Keycode.HOME)
-    kbd.send(Keycode.SHIFT, Keycode.END)
-    kbd.send(Keycode.CONTROL, Keycode.X)
-    kbd.send(Keycode.UP_ARROW)
-    kbd.send(Keycode.HOME)
-    kbd.send(Keycode.CONTROL, Keycode.V)
-    kbd.send(Keycode.SHIFT, Keycode.END)
-    kbd.send(Keycode.CONTROL, Keycode.X)
-    kbd.send(Keycode.DOWN_ARROW)
-    kbd.send(Keycode.CONTROL, Keycode.V)
-    
-default_pages = (
-    (
-        "Function Keys", (
-            ("F13", Keycode.F13),
-            ("F14", Keycode.F14),
-            ("F15", Keycode.F15),
-            ("F16", Keycode.F16),
-            ("F17", Keycode.F17),
-            ("F18", Keycode.F18),
-            ("F19", Keycode.F19),
-            ("F20", Keycode.F20),
-        ),
-    ),
-    (
-        "Text Utils", (
-            ("S All", (Keycode.CONTROL, Keycode.A)),
-            ("SelLn", (Keycode.HOME, Keycode.SHIFT, Keycode.END)),
-            ("SwpLn", swap_lines),
-            ("Sign", "\n\nThanks,\nJoel Fergusson"),
-            ("Undo", (Keycode.CONTROL, Keycode.Z)),
-            ("Cut", (Keycode.CONTROL, Keycode.X)),
-            ("Copy", (Keycode.CONTROL, Keycode.C)),
-            ("Paste", (Keycode.CONTROL, Keycode.V)),
-        )
-    ),
-    (
-        "Gaming", (
-            ("Shoot", Keycode.ENTER),
-            ("  ^", Keycode.W),
-            ("Jump", Keycode.SPACE),
-            ("Chng", Keycode.I),
-            ("  <", Keycode.A),
-            ("  v", Keycode.S),
-            ("  >", Keycode.D),
-            ("Rload", Keycode.R),
-        ),
-    ),
-    
-)
+
 
 class Leds():
     def __init__(self, show_binary=True):
@@ -107,16 +83,16 @@ class Leds():
 class Buttons():
     def __init__(self):
         pin_nums = [
-            board.GP6,
-            board.GP7,
-            board.GP8,
-            board.GP9,
-            board.GP17,
-            board.GP16,
-            board.GP15,
-            board.GP14,
-            board.GP5,
-            board.GP2,
+            board.GP6,  # 1
+            board.GP7,  # 2
+            board.GP8,  # 3
+            board.GP9,  # 4
+            board.GP17, # 5
+            board.GP16, # 6
+            board.GP15, # 7
+            board.GP14, # 8
+            board.GP5,  # Next Page
+            board.GP2,  # Encoder push
         ]
         self.buttons = [io.DigitalInOut(i) for i in pin_nums]
         for b in self.buttons:
@@ -270,6 +246,57 @@ class PageManager():
         self.current_page.release(k)
         
         
+# Default pages - don't change these. Make changes in keys.py
+
+def launch_command_line(keys, text):
+    """
+    Example function that will launch the command line on Windows machines
+    """
+    keys.send(Keycode.WINDOWS, Keycode.R)
+    time.sleep(0.1)
+    text.write("cmd")
+    keys.send(Keycode.ENTER)
+
+default_pages = (
+    (
+        "Text Utilities", (
+            ("S All", (Keycode.CONTROL, Keycode.A)),
+            ("SelLn", (Keycode.HOME, Keycode.SHIFT, Keycode.END)),
+            ("cmd", launch_command_line),
+            ("Sign", "\n\nThanks,\nJoel"),
+            ("Undo", (Keycode.CONTROL, Keycode.Z)),
+            ("Cut", (Keycode.CONTROL, Keycode.X)),
+            ("Copy", (Keycode.CONTROL, Keycode.C)),
+            ("Paste", (Keycode.CONTROL, Keycode.V)),
+        )
+    ),
+    (
+        "Gaming", (
+            ("Shoot", Keycode.ENTER),
+            ("  ^", Keycode.W),
+            ("Jump", Keycode.SPACE),
+            ("Chng", Keycode.I),
+            ("  <", Keycode.A),
+            ("  v", Keycode.S),
+            ("  >", Keycode.D),
+            ("Rload", Keycode.R),
+        ),
+    ),
+    (
+        "Function Keys", (
+            ("F13", Keycode.F13),
+            ("F14", Keycode.F14),
+            ("F15", Keycode.F15),
+            ("F16", Keycode.F16),
+            ("F17", Keycode.F17),
+            ("F18", Keycode.F18),
+            ("F19", Keycode.F19),
+            ("F20", Keycode.F20),
+        ),
+    ),
+)
+        
+# Set up external USB connections
 dm.set_loading_bar(21)
 kbd = Keyboard(usb_hid.devices)
 dm.set_loading_bar(42)
@@ -278,13 +305,14 @@ dm.set_loading_bar(63)
 cctl = ConsumerControl(usb_hid.devices)
 dm.set_loading_bar(84)
 
-
+# Load pages
 try:
     pages = keys.pages
 except Exception as e:
     dm.show_err("User defined keys\nimport failed.\nLoading defaults...")
-    time.sleep(3)
+    time.sleep(5)
     pages = default_pages
+    dm.show_splash_screen(84)
 
 pm = PageManager(pages, kbd, layout)
 dm.set_loading_bar(105)
@@ -303,35 +331,49 @@ dm.show_page(pm.current_page)
 
 try:
     while True:
-        _, pushed, released = buttons.get_changes()
-        pushed = buttons.edges_to_list(pushed)
-        released = buttons.edges_to_list(released & 0xFF)
+        try:
+            _, pushed, released = buttons.get_changes()
+            pushed = buttons.edges_to_list(pushed)
+            # Ignore releasing the encoder and next page buttons
+            released = buttons.edges_to_list(released & 0xFF)
+            
+            if 8 in pushed:
+                # Next page button pressed
+                pm.next_page()
+                leds.show(pm.current_index)
+                dm.show_page(pm.current_page)
+                pushed.remove(8)
+                
+            if 9 in pushed:
+                # Encoder pressed
+                cctl.send(rotary_press_function)
+                pushed.remove(9)
+                
+            for k in pushed:
+                pm.press(k)
+                
+            for k in released:
+                pm.release(k)
+            
+            # Handle encoder changes
+            d = encoder.get_delta()
+            while d:
+                if d > 0:
+                    cctl.send(ConsumerControlCode.VOLUME_INCREMENT)
+                    d -= 1
+                if d < 0:
+                    cctl.send(ConsumerControlCode.VOLUME_DECREMENT)
+                    d += 1
         
-        if 8 in pushed:
-            pm.next_page()
-            leds.show(pm.current_index)
-            dm.show_page(pm.current_page)
-            pushed.remove(8)
-            
-        if 9 in pushed:
-            # Encoder pressed
-            cctl.send(rotary_press_function)
-            pushed.remove(9)
-            
-        for k in pushed:
-            pm.press(k)
-            
-        for k in released:
-            pm.release(k)
+        # Catch everything except a keyboard interrupt (which is how
+        # requests from Thonny come in)
+        except KeyboardInterrupt:
+            raise
         
-        d = encoder.get_delta()
-        while d:
-            if d > 0:
-                cctl.send(ConsumerControlCode.VOLUME_INCREMENT)
-                d -= 1
-            if d < 0:
-                cctl.send(ConsumerControlCode.VOLUME_DECREMENT)
-                d += 1
+        except Exception as e:
+            print("Exception occurred, continuing anyway...")
+            print(e)
+            pass
         
             
 except Exception as e:
