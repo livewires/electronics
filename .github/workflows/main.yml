@@ -9,7 +9,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          pre_compile: export TEXINPUTS=./worksheet-components/:
+          pre_compile: "export TEXINPUTS=./worksheet-components/:"
           root_file: macropad/worksheet/worksheet.tex
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
