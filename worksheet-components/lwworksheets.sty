@@ -9,6 +9,9 @@
 
 \newcommand{\ohm}[1]{#1\textOmega}
 
+
+\newcounter{instructioncounter}
+
 \newcommand{\frontpage}[1]{
 
     \begin{titlepage} % Suppresses headers and footers on the title page
@@ -67,7 +70,6 @@
 
 \newenvironment{instructions}{
     \def\arraystretch{1.5}
-    \newcounter{instructioncounter}
     \setcounter{instructioncounter}{1}
     \begin{longtable}{| p{0.1\textwidth} | p{0.7\textwidth} | l |}
     \hline
