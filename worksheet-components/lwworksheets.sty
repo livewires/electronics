@@ -1,0 +1,95 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{lwworksheets}[LiveWires electronics worksheets]
+
+\RequirePackage{graphicx}
+\RequirePackage{svg}
+\RequirePackage{longtable}
+\RequirePackage{textgreek}
+\RequirePackage{framed}
+
+\newcommand{\ohm}[1]{#1\textOmega}
+
+\newcommand{\frontpage}[1]{
+
+    \begin{titlepage} % Suppresses headers and footers on the title page
+
+        \centering % Centre all text
+
+        %------------------------------------------------
+        %	LW logo
+        %------------------------------------------------
+
+        \includegraphics[width=0.5\textwidth]{img/logo-dark-su.png}
+
+        \vspace{12em}
+
+        %------------------------------------------------
+        %	Title and subtitle
+        %------------------------------------------------
+
+
+        \begin{minipage}{0.7\textwidth}
+            \centering
+
+            \noindent\rule[1em]{\textwidth}{2pt}\\
+
+            \vspace{1em}
+
+            \textsc{\bfseries \Huge #1}\\
+            \vspace{1em}
+            \Large Electronics Project\\
+
+            \vspace{1.2em}
+
+            \noindent\rule[1.2em]{\textwidth}{2pt}
+        \end{minipage}
+
+
+        \vfill
+
+        %------------------------------------------------
+        %	Space for YP's name
+        %------------------------------------------------
+
+        \fbox{\begin{minipage}{\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax}
+            {\Large\textbf{Name:}}\\ % Author name
+
+            \vspace{3em}
+        \end{minipage}}
+
+    \end{titlepage}
+}
+
+
+\newcommand{\instruction}[1]{
+    \arabic{instructioncounter}.\stepcounter{instructioncounter} & #1 & \\ \hline
+}
+
+\newenvironment{instructions}{
+    \def\arraystretch{1.5}
+    \newcounter{instructioncounter}
+    \setcounter{instructioncounter}{1}
+    \begin{longtable}{| p{0.1\textwidth} | p{0.7\textwidth} | l |}
+    \hline
+    \textbf{No.} & \textbf{Instruction} & \textbf{Complete?} \\ \hline
+}{
+    \end{longtable}
+}
+
+\newcommand{\explainLed}{
+    \begin{minipage}[t]{0.4\textwidth}
+    \begin{framed}
+    \subsection*{LED} \\
+    \includegraphics[width=\textwidth]{img/led-polarity.png}
+    \end{framed}
+    \end{minipage}
+}
+
+\newcommand{\explainMosfet}{
+    \begin{minipage}[t]{0.4\textwidth}
+    \begin{framed}
+    \subsection*{2N7000} \\
+    \includegraphics[width=\textwidth]{img/2n7000-polarity.png}
+    \end{framed}
+    \end{minipage}
+}
