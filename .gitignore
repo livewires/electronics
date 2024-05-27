@@ -29,3 +29,10 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+# Latex files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.pdf

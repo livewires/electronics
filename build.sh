@@ -1,6 +1,5 @@
 #!/bin/bash
 cd macropad/worksheet/
-pwd
-ls ../../worksheet-components/
+# This is a bit of a cheat, there's probably a better way of doing it.
 cp -r ../../worksheet-components/* ./
 make
