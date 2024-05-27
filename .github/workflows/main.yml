@@ -5,14 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
       - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v3
+        uses: dante-ev/latex-action@latest
         with:
-          pre_compile: "export TEXINPUTS=./worksheet-components/:./macropad/worksheet/:"
-          root_file: macropad/worksheet/worksheet.tex
-      - name: Upload PDF file
+          entrypoint: ./build.sh
+      - name: Publish PDF
         uses: actions/upload-artifact@v4
         with:
-          name: PDF
-          path: worksheet.pdf
+          name: worksheets
+          path: macropad/worksheet/worksheet.pdf
