@@ -1,3 +1,5 @@
 #!/bin/bash
-cd macropad/worksheet
+cd macropad/worksheet/
+pwd
+ls ../../worksheet-components/
 make
