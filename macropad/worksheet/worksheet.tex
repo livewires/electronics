@@ -43,52 +43,18 @@
 \usepackage{graphicx}
 
 
-
 \begin{document}
 
 \frontpage{USB Macro Keypad}
 
 %\import{../../worksheet-components}{title-page.tex}
 
-\section{PCB}
+\section{Soldering}
+\label{sec:soldering}
 \begin{instructions}
 	\instruction{
 		Read through \textit{all} these instructions thoroughly.
 	}
-	\instruction{
-		Make the PCB (using the clear film artwork like in section
-		\ref{sec:etch}.) with the help of a team member.  Be careful
-		to clean up the edges of the board before exposing it. Ensure
-		the artwork is the right way up on the light box.
-	}
-	\instruction{
-		Drill \textbf{all} the holes with a 0.8mm drill bit.
-	}
-	\instruction{
-		Looking carefully at the image in section \ref{sec:drillsizes},
-		drill all the blue holes with a 1.5mm drill bit.
-	}
-	\instruction{
-		Looking carefully at the image in section \ref{sec:drillsizes},
-		drill all the red holes with a 1.75mm drill bit.
-	}
-	\instruction{
-		Looking carefully at the image in section \ref{sec:drillsizes},
-		drill all the purple holes with a 2.6mm drill bit.
-	}
-	\instruction{
-		Looking carefully at the image in section \ref{sec:drillsizes},
-		drill all the green holes with a 4mm drill bit.
-	}
-	\instruction{
-		Ask a team member to check your PCB, then you can start
-		soldering (section \ref{sec:soldering})
-	}
-\end{instructions}
-
-\section{Soldering}
-\label{sec:soldering}
-\begin{instructions}
 	\instruction{
 		Check and identify all components. Attach these with masking
 		tape to the sheet lablled "Parts List" (Section
@@ -147,23 +113,25 @@
 	}
 \end{instructions}
 
-\section{Final Assembly}
+\pagebreak
+\section{Assembly}
 \begin{instructions}
-	\instruction{
-		Get a team member to check all your work.
-	}
-	\instruction{
-		With a team member, insert the screen and the Pi Pico and attach
-		a micro-USB cable to check that your project works correctly.
-	}
-	\instruction{
-		Once it all works (and not before!), fit the key caps to the
-		switches and the knob to the rotary encoder
-	}
 	\instruction{
 		Fit four rubber feet to the four corners of the bottom of the
 		PCB, and a fifth rubber foot directly underneath the rotary
 		encoder.
+	}
+	\instruction{
+		Get a team member to check all your work.
+	}
+	\instruction{
+		With a team member, insert the screen and the Pi Pico and
+		connect it to a computer using a micro-USB cable.
+		Press each button to check that it's working as intended.
+	}
+	\instruction{
+		Once it all works (and not before!), fit the key caps to the
+		switches and the knob to the rotary encoder
 	}
 \end{instructions}
 
@@ -175,18 +143,18 @@
 \section{Schematic}
 \includegraphics[width=\textwidth]{img/macropad-rev1-schematic.png}
 
-\section{Etch}
-\label{sec:etch}
-\includegraphics[width=\textwidth]{img/macropad-rev1-B_Cu_Oversized.png}
+%\section{Etch}
+%\label{sec:etch}
+%\includegraphics[width=\textwidth]{img/macropad-rev1-B_Cu_Oversized.png}
 
 \section{Placement}
 \label{sec:placement}
 \includegraphics[width=\textwidth]{img/component-layout.png}
 
 
-\section{Drill Sizes}
-\label{sec:drillsizes}
-\includegraphics[width=\textheight,angle=90]{img/hole-colours.png}
+%\section{Drill Sizes}
+%\label{sec:drillsizes}
+%\includegraphics[width=\textheight,angle=90]{img/hole-colours.png}
 
 
 \section{Parts List}
@@ -210,6 +178,7 @@ U2                 & MDOB128032GV-WI       & 1            & MDOB128032GV-WI     
                    & Key cap               & 9            & -                    \\ \hline
                    & Rotary knob           & 1            & K70105               \\ \hline
                    & Rubber feet           & 5            & SJ5382-TRANSP        \\ \hline
+                   & Circuit board         & 1            & -                    \\ \hline
 \end{tabular}
 
 

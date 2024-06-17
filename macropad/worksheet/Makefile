@@ -3,6 +3,8 @@
 # file of the given name existing.
 .PHONY: worksheet.pdf all clean
 
+# This should point at the relative path where the worsksheet components are
+export TEXINPUTS := .:../../worksheet-components/:
 
 # The first rule in a Makefile is the one executed by default ("make"). It
 # should always be the "all" rule, so that "make" and "make all" are identical.
@@ -31,8 +33,6 @@ all: worksheet.pdf
 # missing file reference and interactively asking you for an alternative.
 
 worksheet.pdf: worksheet.tex
-	# This should point at the relative path where the worsksheet components are
-	export TEXINPUTS=../../worksheet-components/
 	latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode" -use-make worksheet.tex
 
 clean:
