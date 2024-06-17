@@ -32,7 +32,7 @@ That should be all you need. If you get stuck, feel free to get in touch with a 
 
 If you've bricked your macropad by changing something, don't worry, it should be easy to fix. Just download the contents of the "code" folder in github and copy it across to the device. 
 
-## Setting up a macro pads for the camp?
+## Setting up for the camp?
 
 This should only need to be done by the leader running the sessions on the camp. This is what needs doing in advance:
 
@@ -64,7 +64,7 @@ To save money, we're ordering the Pi Pico un-soldered. This means a leader will 
 
 CircuitPython needs installing on the Pico, and then our code needs copying. 
 
-Detailed instructions for installing CircuitPython on the Pico can be found [here](https://learn.adafruit.com/getting-started-with-raspberry-pi-pico-circuitpython/circuitpython). The version used for development was 9.0.4. To summarise in case of a dead link:
+Detailed instructions for installing CircuitPython on the Pico can be found [here](https://learn.adafruit.com/getting-started-with-raspberry-pi-pico-circuitpython/circuitpython). The version used for development was 9.0.4, which is [copied into this repo](adafruit-circuitpython-raspberry_pi_pico-en_GB-9.0.4.uf2). To summarise in case of a dead link:
 * While holding the BOOTSEL button on the pico down, plug it in to a computer using the USB cable
 * Copy the CircuitPython uf2 file onto the RPI-RP2 drive that appears
 * The RPI-RP2 drive should disappear and a CIRCUITPY drive should appear. 
@@ -76,6 +76,6 @@ You should now be able to copy the contents of the [code](code) folder onto the 
 Soldering the pico headers to the PCB is much easier for the YP if they can physically join both 20-pin connectors together, the right distance apart. This can be done by attaching the connectors to a Pico before soldering them, but this risks breaking the Pico. So a jig can be made using header pins and a bit of veroboard. 
 
 Use a Pico to copy the exact spacing of the pins. It should look something like this:
-![Pico jig - top](pico-jig-top.jpg)
-![Pico jig - bottom](pico-jig-bottom.jpg)
+
+![Pico jig - top](pico-jig-top.jpg) ![Pico jig - bottom](pico-jig-bottom.jpg)
 
