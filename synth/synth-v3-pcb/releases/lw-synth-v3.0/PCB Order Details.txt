@@ -1,0 +1,24 @@
+Simple 2-layer PCB, nothing special.
+
+JLCPCB order details:
+  * Base material: FR4
+  * Layers: 2
+  * Dimensions [automatic]
+  * Product type: Industrial/Consumer Electronics
+
+  * Different Design: 1
+  * Delivery Format: Single PCB
+  * PCB Thicknes: 1.6mm
+  * PCB Color: Black
+  * Silkscreen: White
+  * Material type: [doesn't matter, cheapest]
+  * Surface finish: "LeadFree HASL" or "ENIG"
+
+  * Outer copper weight: 1oz
+  * Via covering: Tented
+  * Via plating method: Not specified
+  * Min via hole size/diameter: 0.3mm [largest and therefore cheapest minimum at time of writing. Actual via diameter in board design is 0.35mm]
+
+  All other options set to cheapest option, usually defaults
+
+

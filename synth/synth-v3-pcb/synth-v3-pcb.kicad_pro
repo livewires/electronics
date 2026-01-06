@@ -147,7 +147,7 @@
           "td_onpthpad": true,
           "td_onroundshapesonly": false,
           "td_onsmdpad": true,
-          "td_ontrackend": false,
+          "td_ontrackend": true,
           "td_onvia": true
         }
       ],
@@ -502,10 +502,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "releases/lw-synth-v3.0/lw-synth-v3.0-gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "releases/lw-synth-v3.0/synth-v3.0-cad.step",
       "svg": "",
       "vrml": ""
     },
