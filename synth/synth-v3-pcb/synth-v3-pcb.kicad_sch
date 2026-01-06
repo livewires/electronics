@@ -1,0 +1,9251 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "e4b14e5f-7937-4e93-a8ca-bc52b5b8338f")
+	(paper "A4")
+	(lib_symbols
+		(symbol "LiveWires:LW_15mm_TOUCH"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 3.81 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "15mm Touch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "LiveWires:BASIC_TOUCH_PAD_15mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "15mm touch pad"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LW_15mm_TOUCH_0_1"
+				(rectangle
+					(start 2.54 1.27)
+					(end 10.16 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LW_15mm_TOUCH_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 2.54)
+					(name "TOUCH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LiveWires:LW_C-10n"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0 4.318 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "10nF"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "LiveWires:LW_CeramicCap_5.08mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "10nF Ceramic Capacitor (generic)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Cost" "0.07"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "TS170R1H103MSBFB0R"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Suntan"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LW_C-10n_0_1"
+				(polyline
+					(pts
+						(xy -0.508 1.016) (xy -0.508 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.016) (xy 0.508 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 0) (xy 1.016 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LW_C-10n_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LiveWires:LW_C-1u"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0 4.318 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1µF"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "LiveWires:LW_CeramicCap_5.08mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1µF Ceramic Capacitor (generic)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Cost" "0.07"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "TS170R1H105MSBFB0R"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Suntan"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LW_C-1u_0_1"
+				(polyline
+					(pts
+						(xy -0.508 1.016) (xy -0.508 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 1.016) (xy 0.508 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 0) (xy 1.016 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LW_C-1u_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LiveWires:LW_LED_RED_5mm"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Red"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Footprint" "LiveWires:LW_LED_D5.0mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Red LED, 5mm, 2.1V, 20mA"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Cost" "0.034"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "1573708"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "TruComponents"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LW_LED_RED_5mm_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -2.032) (xy -0.508 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 -1.016) (xy -0.762 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 -1.27) (xy -1.016 -2.032) (xy -1.016 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 -2.54) (xy 0.254 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 -1.778) (xy -0.254 -2.54) (xy -0.254 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.016) (xy 1.016 1.016) (xy -0.635 0) (xy 1.016 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LW_LED_RED_5mm_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LiveWires:LW_PIANO"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 2.54 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Keyboard"
+				(at 2.54 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "LiveWires:LW_PIANO"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Piano Keyboard, 1 octave"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LW_PIANO_1_1"
+				(rectangle
+					(start 2.54 2.54)
+					(end 10.16 -33.02)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 2.54)
+					(name "C2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 2.54)
+					(name "Bb"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -10.16 0)
+					(length 2.54)
+					(name "G#"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -15.24 0)
+					(length 2.54)
+					(name "F#"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -17.78 0)
+					(length 2.54)
+					(name "F"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -20.32 0)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -22.86 0)
+					(length 2.54)
+					(name "Eb"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -25.4 0)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -27.94 0)
+					(length 2.54)
+					(name "C#"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -30.48 0)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LiveWires:LW_Pico"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 13.208 0.254 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Pi Pico"
+				(at 13.208 -1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "LiveWires:LW_RPi_Pico_SMD_TH"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Pi Pico, no headers, no wireless"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Cost" "3.00"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "SC0915"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Raspberry Pi"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LW_Pico_1_1"
+				(rectangle
+					(start 2.54 1.27)
+					(end 12.7 -19.05)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin bidirectional line
+					(at 0 0 0)
+					(length 2.54)
+					(name "GPIO0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -2.54 0)
+					(length 2.54)
+					(name "GPIO1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -5.08 0)
+					(length 2.54)
+					(name "GPIO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -7.62 0)
+					(length 2.54)
+					(name "GPIO3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -10.16 0)
+					(length 2.54)
+					(name "GPIO4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -12.7 0)
+					(length 2.54)
+					(name "GPIO5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -15.24 0)
+					(length 2.54)
+					(name "GPIO6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -17.78 0)
+					(length 2.54)
+					(name "GPIO7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "LW_Pico_2_1"
+				(rectangle
+					(start 2.54 1.27)
+					(end 12.7 -19.05)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin bidirectional line
+					(at 0 0 0)
+					(length 2.54)
+					(name "GPIO8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -2.54 0)
+					(length 2.54)
+					(name "GPIO9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -5.08 0)
+					(length 2.54)
+					(name "GPIO10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -7.62 0)
+					(length 2.54)
+					(name "GPIO11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -10.16 0)
+					(length 2.54)
+					(name "GPIO12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -12.7 0)
+					(length 2.54)
+					(name "GPIO13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -15.24 0)
+					(length 2.54)
+					(name "GPIO14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 0 -17.78 0)
+					(length 2.54)
+					(name "GPIO15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "LW_Pico_3_1"
+				(rectangle
+					(start -2.54 1.27)
+					(end 12.7 -24.13)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "GPIO16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "GPIO17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 -5.08 0)
+					(length 2.54)
+					(name "GPIO18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 -7.62 0)
+					(length 2.54)
+					(name "GPIO19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 -10.16 0)
+					(length 2.54)
+					(name "GPIO20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 -12.7 0)
+					(length 2.54)
+					(name "GPIO21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 -15.24 0)
+					(length 2.54)
+					(name "GPIO22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 -17.78 0)
+					(length 2.54)
+					(name "GPIO26_ADC0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 -20.32 0)
+					(length 2.54)
+					(name "GPIO27_ADC1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -5.08 -22.86 0)
+					(length 2.54)
+					(name "GPIO28_ADC2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "LW_Pico_4_1"
+				(rectangle
+					(start 0 1.27)
+					(end 12.7 -39.37)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin unspecified line
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "40"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -2.54 -2.54 0)
+					(length 2.54)
+					(name "VSYS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "39"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -2.54 -5.08 0)
+					(length 2.54)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "36"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -2.54 -7.62 0)
+					(length 2.54)
+					(name "ADC_VREF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "35"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -2.54 -12.7 0)
+					(length 2.54)
+					(name "3V3_EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "37"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -2.54 -15.24 0)
+					(length 2.54)
+					(name "RUN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -20.32 0)
+					(length 2.54)
+					(name "AGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -22.86 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -25.4 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -2.54 -27.94 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "38"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -30.48 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -33.02 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -35.56 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -38.1 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LiveWires:LW_R-100"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "100Ω"
+				(at 0 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "LiveWires:LW_Res"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "100Ω Through Hole Resistor (Generic)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Cost" "0.03"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "MF0W4FF1000"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Royal Ohm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LW_R-100_0_1"
+				(rectangle
+					(start -2.54 1.016)
+					(end 2.54 -1.016)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LW_R-100_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LiveWires:LW_R-1M"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1MΩ"
+				(at 0 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "LiveWires:LW_Res"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1MΩ Through Hole Resistor (Generic)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Cost" "0.03"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "MF0W4FF1004"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Royal Ohm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LW_R-1M_0_1"
+				(rectangle
+					(start -2.54 1.016)
+					(end 2.54 -1.016)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LW_R-1M_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "LiveWires:LW_TC1044S"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 2.54 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "TC1044S"
+				(at 2.54 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "LiveWires:LW_DIP8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Charge pump DC-DC negative V generator"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Cost" "1.188"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" "TC1044SCPA"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Microchip"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LW_TC1044S_1_1"
+				(rectangle
+					(start 2.54 2.54)
+					(end 20.32 -17.78)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 2.54)
+					(name "V^{+}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 0)
+					(length 2.54)
+					(name "BOOST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 2.54)
+					(name "OSC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -11.43 0)
+					(length 2.54)
+					(name "LV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -15.24 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 0 180)
+					(length 2.54)
+					(name "V_{OUT}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -3.81 180)
+					(length 2.54)
+					(name "CAP+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -15.24 180)
+					(length 2.54)
+					(name "CAP-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+3V3"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+5V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:-5V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "-5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"-5V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "-5V_0_0"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "-5V_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy 0.762 1.27) (xy 0 2.54) (xy -0.762 1.27) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "Power Regulator"
+		(exclude_from_sim no)
+		(at 86.106 134.62 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "0e8a94a8-a0c0-4081-b538-8916aba0fcd5")
+	)
+	(text "Microcontroller"
+		(exclude_from_sim no)
+		(at 136.144 22.606 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "5c3e3a12-459a-430e-8a69-7f7a585df348")
+	)
+	(text "Octave +/-"
+		(exclude_from_sim no)
+		(at 24.13 37.592 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d1d76f93-e177-4433-97b3-01210f4fc6bd")
+	)
+	(junction
+		(at 80.01 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "06c506f0-fe75-41fb-9291-204c9b506ff7")
+	)
+	(junction
+		(at 92.71 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0948ffe9-a2fd-4e8b-87ac-8bdd61fec603")
+	)
+	(junction
+		(at 86.36 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1144aa0b-b312-4442-b137-50973abe4831")
+	)
+	(junction
+		(at 99.06 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "15b182c6-885f-4f54-bbda-44464e11965c")
+	)
+	(junction
+		(at 273.05 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a20e12c-2529-411b-a9ea-e496b12b70c4")
+	)
+	(junction
+		(at 48.26 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1dd65622-60cd-489f-9632-15884a589ae7")
+	)
+	(junction
+		(at 54.61 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1ee7322c-9a3f-4587-90c4-a53c625cac3d")
+	)
+	(junction
+		(at 86.36 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2129c3c6-1765-402c-a81e-3c61724ab17b")
+	)
+	(junction
+		(at 130.81 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "23360249-6907-4dc5-bd40-cae941add68e")
+	)
+	(junction
+		(at 204.47 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2977acfb-8e3d-4831-8796-3013fff334e6")
+	)
+	(junction
+		(at 73.66 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "326e1f0f-896f-4fcc-b9b2-a7ac61eb70e1")
+	)
+	(junction
+		(at 118.11 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "329628cb-fb6b-4520-a107-3ad28f86532d")
+	)
+	(junction
+		(at 54.61 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3421b3c3-6534-4021-9530-51bf0d8cfe3d")
+	)
+	(junction
+		(at 105.41 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "384fe69e-9f85-4efb-9936-64f62b6a0043")
+	)
+	(junction
+		(at 80.01 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "49a716c8-e1fb-468e-94af-68a1903561f8")
+	)
+	(junction
+		(at 204.47 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "574d667a-7db0-47f3-8e0e-3656171641c8")
+	)
+	(junction
+		(at 67.31 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "603baba0-7008-4892-bc85-501cf1f44256")
+	)
+	(junction
+		(at 111.76 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "64e3bcd2-c1d5-476b-81da-778586a640d8")
+	)
+	(junction
+		(at 204.47 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "66503cef-a89b-40cf-bc89-9c4e40bcc655")
+	)
+	(junction
+		(at 66.04 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "66d02a45-7362-446a-8305-97edd61f068d")
+	)
+	(junction
+		(at 204.47 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6c87da24-7aa1-4c61-9f85-2d2b22733dc2")
+	)
+	(junction
+		(at 130.81 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6f1a30ac-aa62-49c6-b25f-ce414f6b4cce")
+	)
+	(junction
+		(at 273.05 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "78757816-e57b-4f89-a4d9-0b1236bf0e9f")
+	)
+	(junction
+		(at 60.96 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7baa7969-6c41-4674-99cc-cc6587a4c8c0")
+	)
+	(junction
+		(at 204.47 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7bdbcad8-e65c-4d2d-bda4-d9bdf0c9ae3b")
+	)
+	(junction
+		(at 273.05 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8656ff70-e5b9-472b-ad79-65db9101fe39")
+	)
+	(junction
+		(at 137.16 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "96c37f85-9647-48e7-8272-951c06303f03")
+	)
+	(junction
+		(at 58.42 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "afac1eb5-9aac-4ff7-b163-f1d32f5c824b")
+	)
+	(junction
+		(at 204.47 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b745ee01-8315-4e27-ad8c-568c95959673")
+	)
+	(junction
+		(at 124.46 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bccf5805-72c6-4493-b72a-4620c2a0b1b0")
+	)
+	(junction
+		(at 60.96 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c3d09b9f-d193-4309-aa8d-463125cd67ae")
+	)
+	(junction
+		(at 99.06 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8cf3fe5-9235-4487-8726-d71229bdfdb7")
+	)
+	(junction
+		(at 48.26 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ca4931c4-5d26-4d6b-9472-dcc1e0ccad32")
+	)
+	(junction
+		(at 73.66 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "db645cef-048e-4805-9287-c6258ec28065")
+	)
+	(junction
+		(at 58.42 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dccb4a64-75fa-41ce-ac1a-8271f317f093")
+	)
+	(junction
+		(at 67.31 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dff149f2-f37d-4670-871b-3de373c3bc0c")
+	)
+	(junction
+		(at 204.47 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e62d6e6f-59b1-4e34-bf8d-3416b7398fed")
+	)
+	(junction
+		(at 111.76 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "efc03de0-2223-499c-88b1-807a55cea2d5")
+	)
+	(junction
+		(at 111.76 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f0aadb71-bec0-4674-823c-75123675ec5b")
+	)
+	(junction
+		(at 273.05 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f69b543d-47b9-4b91-9b40-9e3345e936e9")
+	)
+	(junction
+		(at 118.11 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f76d0423-1cab-4f26-992f-f0ba01d0ddb3")
+	)
+	(junction
+		(at 102.87 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f807070f-ed4f-41d6-956d-2388151b989a")
+	)
+	(junction
+		(at 105.41 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fa6092d9-ece2-47d6-9db4-cf9dfb7be95d")
+	)
+	(junction
+		(at 124.46 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fafad5bd-9072-42bb-b7e3-a89c264c3141")
+	)
+	(junction
+		(at 92.71 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb5224e3-e398-4a2c-9abc-97f2f3b9e004")
+	)
+	(no_connect
+		(at 203.2 52.07)
+		(uuid "1462d2c9-17e2-4e38-ae34-73415e88358b")
+	)
+	(no_connect
+		(at 203.2 57.15)
+		(uuid "1f1e8f95-385c-4ab2-b967-947d47d2906f")
+	)
+	(no_connect
+		(at 203.2 64.77)
+		(uuid "24d9967c-90b3-43c7-ab05-ff6e5e357502")
+	)
+	(no_connect
+		(at 203.2 62.23)
+		(uuid "5431ecd1-9ba0-4365-8813-eac0a4da1b8d")
+	)
+	(no_connect
+		(at 68.58 161.29)
+		(uuid "d9e05878-2d81-4348-b2f0-19946a67eede")
+	)
+	(no_connect
+		(at 68.58 165.1)
+		(uuid "f9327fe8-9b1f-407b-8f25-9b82a7e7a495")
+	)
+	(wire
+		(pts
+			(xy 44.45 73.66) (xy 105.41 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00a762a8-b735-4595-b2b0-4207cb390d2f")
+	)
+	(wire
+		(pts
+			(xy 48.26 50.8) (xy 152.4 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0157fa93-6661-4ae3-9c50-aba23f659625")
+	)
+	(wire
+		(pts
+			(xy 67.31 58.42) (xy 152.4 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01bc5d29-ee57-43bb-aad9-43effab23264")
+	)
+	(wire
+		(pts
+			(xy 44.45 76.2) (xy 111.76 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "031c7ac6-0c09-43e2-ba2c-7be1fbd39881")
+	)
+	(wire
+		(pts
+			(xy 111.76 165.1) (xy 111.76 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03e5c20b-284d-4ea6-bdbf-c71dc3a4a02b")
+	)
+	(wire
+		(pts
+			(xy 250.19 77.47) (xy 256.54 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03e8b055-79e1-4abb-8313-660125cce1be")
+	)
+	(wire
+		(pts
+			(xy 214.63 54.61) (xy 214.63 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "053e3277-b63e-4d1e-9872-69e6e28f3b69")
+	)
+	(wire
+		(pts
+			(xy 73.66 60.96) (xy 73.66 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06362128-5c48-4997-bf2c-8236a42da3ac")
+	)
+	(wire
+		(pts
+			(xy 130.81 96.52) (xy 137.16 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0820aeaf-d943-4053-b53b-04601fd2bd10")
+	)
+	(wire
+		(pts
+			(xy 137.16 48.26) (xy 137.16 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a398666-d9ff-45b5-afe9-0516c10dc80f")
+	)
+	(wire
+		(pts
+			(xy 58.42 151.13) (xy 58.42 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b98d630-3697-47b5-aad8-384a97bf050f")
+	)
+	(wire
+		(pts
+			(xy 86.36 96.52) (xy 92.71 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c96f798-e4ec-46bf-a0d0-002e71398be0")
+	)
+	(wire
+		(pts
+			(xy 67.31 95.25) (xy 67.31 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dcada06-d473-4ad3-8b37-2465a97d09ec")
+	)
+	(wire
+		(pts
+			(xy 203.2 87.63) (xy 204.47 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "101b2e02-567d-4479-924b-a06ed554d0de")
+	)
+	(wire
+		(pts
+			(xy 247.65 78.74) (xy 247.65 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10da3f80-a200-4d5f-aea1-e8d6d3e639f2")
+	)
+	(wire
+		(pts
+			(xy 58.42 168.91) (xy 58.42 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17ef66af-51c7-4e8a-a923-c61ac2c2ff31")
+	)
+	(wire
+		(pts
+			(xy 152.4 88.9) (xy 149.86 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bcf77b5-06ad-4d4a-b2cb-605be41bbcdb")
+	)
+	(wire
+		(pts
+			(xy 130.81 45.72) (xy 130.81 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1dfb8bed-91b4-4585-b16f-dc1d84541b42")
+	)
+	(wire
+		(pts
+			(xy 124.46 95.25) (xy 124.46 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e09f55a-1aeb-4066-bd8d-4927b6806324")
+	)
+	(wire
+		(pts
+			(xy 137.16 39.37) (xy 137.16 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f6534a4-5a0e-47fe-9bee-88ac86c3e324")
+	)
+	(wire
+		(pts
+			(xy 48.26 50.8) (xy 48.26 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fb0662b-836f-4548-ad10-8528d2a7144a")
+	)
+	(wire
+		(pts
+			(xy 60.96 96.52) (xy 67.31 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21c27395-3931-483e-8e15-05a2a37aac20")
+	)
+	(wire
+		(pts
+			(xy 44.45 53.34) (xy 54.61 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23dfdb57-d599-4e6f-9340-6b4a778eef4b")
+	)
+	(wire
+		(pts
+			(xy 54.61 53.34) (xy 54.61 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bae4e67-ae12-468a-8609-57fefc47fa2d")
+	)
+	(wire
+		(pts
+			(xy 270.51 77.47) (xy 273.05 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d37296a-d37b-45cd-9363-02a7840c7cdd")
+	)
+	(wire
+		(pts
+			(xy 60.96 55.88) (xy 60.96 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e5d557b-90db-47de-be43-6545cd64a836")
+	)
+	(wire
+		(pts
+			(xy 44.45 71.12) (xy 99.06 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3085e8cf-2869-40f6-aee8-ea9adf8645da")
+	)
+	(wire
+		(pts
+			(xy 99.06 71.12) (xy 99.06 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "319a2123-6604-44c7-8fcb-c2bb9db9a6fd")
+	)
+	(wire
+		(pts
+			(xy 204.47 87.63) (xy 204.47 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "333e6574-616f-4f85-9be9-f30fdece5966")
+	)
+	(wire
+		(pts
+			(xy 147.32 97.79) (xy 154.94 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33ebbbe7-3a71-4a9e-834c-8a7ce73f49f3")
+	)
+	(wire
+		(pts
+			(xy 60.96 55.88) (xy 152.4 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35521916-b4cf-457c-b9e8-c4fd94fe6721")
+	)
+	(wire
+		(pts
+			(xy 203.2 72.39) (xy 204.47 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3605ccc4-fd5e-4e5a-b1d1-4737b42f9c37")
+	)
+	(wire
+		(pts
+			(xy 241.3 83.82) (xy 250.19 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3644f7b9-11e2-4d17-9f24-c340ef0bbd1d")
+	)
+	(wire
+		(pts
+			(xy 60.96 95.25) (xy 60.96 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38e8b18d-c85a-435d-a408-71c2411c53f8")
+	)
+	(wire
+		(pts
+			(xy 111.76 76.2) (xy 152.4 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "397e1522-5f57-48ba-8a75-b16bd2ff3799")
+	)
+	(wire
+		(pts
+			(xy 204.47 72.39) (xy 204.47 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c432e52-d498-4a64-8541-ffea8097acde")
+	)
+	(wire
+		(pts
+			(xy 48.26 96.52) (xy 54.61 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d8fa495-c09b-4e21-a823-ba9f43bb1bd5")
+	)
+	(wire
+		(pts
+			(xy 273.05 68.58) (xy 273.05 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41c4f658-34ac-452b-98ec-831303b8cc49")
+	)
+	(wire
+		(pts
+			(xy 264.16 50.8) (xy 265.43 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4432d816-8ca4-4af1-b0b4-b74cfc36e573")
+	)
+	(wire
+		(pts
+			(xy 241.3 86.36) (xy 256.54 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44faeee6-a121-4d72-9831-c61d21dfd072")
+	)
+	(wire
+		(pts
+			(xy 273.05 86.36) (xy 270.51 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49294367-7acb-4e92-bf71-b9b9faebf907")
+	)
+	(wire
+		(pts
+			(xy 91.44 153.67) (xy 102.87 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bf6e1b1-23aa-4fae-94f5-b741f4a06397")
+	)
+	(wire
+		(pts
+			(xy 80.01 96.52) (xy 86.36 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f6396c8-a7b0-4d24-9652-09c3defe4dde")
+	)
+	(wire
+		(pts
+			(xy 203.2 54.61) (xy 214.63 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fa6bea9-e94c-4168-90df-d905fb6abc0d")
+	)
+	(wire
+		(pts
+			(xy 248.92 68.58) (xy 256.54 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fd64317-60c4-4039-8eb4-557b14bde76b")
+	)
+	(wire
+		(pts
+			(xy 147.32 86.36) (xy 147.32 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50801454-a9a7-44c1-a497-c6ca20405cc8")
+	)
+	(wire
+		(pts
+			(xy 137.16 96.52) (xy 137.16 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "548f236b-26a9-4f6b-a26b-5cf4025967ca")
+	)
+	(wire
+		(pts
+			(xy 264.16 68.58) (xy 265.43 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5737a74b-d3e2-4669-a875-01c64d56fe63")
+	)
+	(wire
+		(pts
+			(xy 92.71 95.25) (xy 92.71 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "573ffd5c-2d8e-4b85-a726-1d98cc549cf8")
+	)
+	(wire
+		(pts
+			(xy 58.42 153.67) (xy 58.42 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5aabf2f1-21cb-4dea-b796-df0245d1bd95")
+	)
+	(wire
+		(pts
+			(xy 67.31 58.42) (xy 67.31 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c697cdf-4528-4419-a172-733a5103a370")
+	)
+	(wire
+		(pts
+			(xy 241.3 76.2) (xy 246.38 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d352c01-06e0-4362-8efa-d5b78eef96b0")
+	)
+	(wire
+		(pts
+			(xy 92.71 68.58) (xy 92.71 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5eee6f3e-0b8c-49bf-91d7-53add7879385")
+	)
+	(wire
+		(pts
+			(xy 105.41 96.52) (xy 111.76 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60b55cda-7bf6-4064-98a2-a70064e2a739")
+	)
+	(wire
+		(pts
+			(xy 264.16 86.36) (xy 265.43 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "628d7c8b-5a8c-4ab1-91a2-7682691997c9")
+	)
+	(wire
+		(pts
+			(xy 203.2 69.85) (xy 204.47 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63a38cef-2a66-4735-8ccf-5663adbed08f")
+	)
+	(wire
+		(pts
+			(xy 44.45 58.42) (xy 67.31 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65c8da36-ee6b-48c3-8466-7b88170429d9")
+	)
+	(wire
+		(pts
+			(xy 105.41 73.66) (xy 105.41 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "667e492b-50bf-439d-a382-333da6b0a5f2")
+	)
+	(wire
+		(pts
+			(xy 111.76 76.2) (xy 111.76 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "672a6325-d4e5-4367-8c08-8e90820644fb")
+	)
+	(wire
+		(pts
+			(xy 92.71 96.52) (xy 99.06 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6848b1f1-2ee4-45d2-bd18-20890ba443ff")
+	)
+	(wire
+		(pts
+			(xy 204.47 74.93) (xy 204.47 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71f4ede0-17e4-4104-ac57-cb0980829437")
+	)
+	(wire
+		(pts
+			(xy 105.41 95.25) (xy 105.41 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74f2d2d5-8c1f-456e-bf88-6041975b74ba")
+	)
+	(wire
+		(pts
+			(xy 203.2 82.55) (xy 204.47 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7562b08d-b002-4957-acf6-d910a5e3a16d")
+	)
+	(wire
+		(pts
+			(xy 86.36 66.04) (xy 86.36 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75a9a39d-e8d4-4545-a2ab-b748aee5d0fd")
+	)
+	(wire
+		(pts
+			(xy 58.42 165.1) (xy 58.42 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75b3f93b-046e-4f3f-b0c8-7e96f67b58cf")
+	)
+	(wire
+		(pts
+			(xy 111.76 153.67) (xy 111.76 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "766c9ed2-e944-4f22-aa2e-e2b2911710ec")
+	)
+	(wire
+		(pts
+			(xy 68.58 168.91) (xy 58.42 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "774f54b3-cbc3-41f6-b728-2a7784f9c605")
+	)
+	(wire
+		(pts
+			(xy 44.45 39.37) (xy 137.16 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77898fa7-5e70-4a07-b7c3-b552a13863dc")
+	)
+	(wire
+		(pts
+			(xy 273.05 77.47) (xy 273.05 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "796af95a-0daa-4f4c-83c5-713a6723515e")
+	)
+	(wire
+		(pts
+			(xy 204.47 69.85) (xy 204.47 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a47de4b-fc2a-449e-84b3-c9b0e4c56280")
+	)
+	(wire
+		(pts
+			(xy 247.65 59.69) (xy 256.54 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a949bee-8cc5-4fb3-a58b-22e615a370ae")
+	)
+	(wire
+		(pts
+			(xy 118.11 95.25) (xy 118.11 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bb63d68-0aa8-4e58-9f68-eaebfa6a0471")
+	)
+	(wire
+		(pts
+			(xy 48.26 96.52) (xy 48.26 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bba67cd-1234-4ff6-95e0-9cc4952eed91")
+	)
+	(wire
+		(pts
+			(xy 118.11 96.52) (xy 124.46 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e92c7b1-61a6-42d8-96c4-42fded3cea64")
+	)
+	(wire
+		(pts
+			(xy 111.76 95.25) (xy 111.76 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84b143b9-61bb-4cc2-9d5c-c6675d339678")
+	)
+	(wire
+		(pts
+			(xy 86.36 66.04) (xy 152.4 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86268dc8-99a6-4af6-84b8-21e86d78b122")
+	)
+	(wire
+		(pts
+			(xy 130.81 35.56) (xy 130.81 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "868de31b-adf1-4b70-a732-a08e932fbe68")
+	)
+	(wire
+		(pts
+			(xy 204.47 82.55) (xy 204.47 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88f0e627-0ad8-40f5-8bf8-4c5ce6aed627")
+	)
+	(wire
+		(pts
+			(xy 241.3 78.74) (xy 247.65 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c2221f2-9c03-47a0-a6df-04fde76491d9")
+	)
+	(wire
+		(pts
+			(xy 241.3 81.28) (xy 248.92 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d130528-e8d3-494b-90b4-c92df19b19c9")
+	)
+	(wire
+		(pts
+			(xy 270.51 59.69) (xy 273.05 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e70fd66-b425-4500-994d-edb2d3a66ad9")
+	)
+	(wire
+		(pts
+			(xy 80.01 95.25) (xy 80.01 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9176481e-c4b6-4928-b62d-458169763781")
+	)
+	(wire
+		(pts
+			(xy 44.45 66.04) (xy 86.36 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92508c2b-59eb-41e5-ac39-327508c6a3eb")
+	)
+	(wire
+		(pts
+			(xy 111.76 96.52) (xy 118.11 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95298763-e750-4f34-84e8-6e30a0289340")
+	)
+	(wire
+		(pts
+			(xy 73.66 60.96) (xy 152.4 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96c72792-2a3a-4e62-8f3b-08e84f7f540d")
+	)
+	(wire
+		(pts
+			(xy 149.86 95.25) (xy 154.94 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9832795e-6597-41a9-b271-162ed43c2c78")
+	)
+	(wire
+		(pts
+			(xy 270.51 50.8) (xy 273.05 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c44e479-9c04-4d98-af30-e5e5de8a6c99")
+	)
+	(wire
+		(pts
+			(xy 67.31 96.52) (xy 73.66 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ccf7e7b-11f5-4903-b03b-e2246b196a0e")
+	)
+	(wire
+		(pts
+			(xy 137.16 48.26) (xy 152.4 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cd47fa5-0ea1-4b14-8a25-e10a391cb7c4")
+	)
+	(wire
+		(pts
+			(xy 248.92 81.28) (xy 248.92 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d04cf20-66b2-4349-847e-cf2ac4ff7010")
+	)
+	(wire
+		(pts
+			(xy 93.98 157.48) (xy 93.98 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d6b89d2-8462-48df-ad8f-64256f05eca0")
+	)
+	(wire
+		(pts
+			(xy 152.4 86.36) (xy 147.32 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9dcef169-b3c7-4fc0-af6e-13fbb860f162")
+	)
+	(wire
+		(pts
+			(xy 91.44 157.48) (xy 93.98 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e9a6240-d8bc-479c-a832-37ae6208d7cf")
+	)
+	(wire
+		(pts
+			(xy 58.42 153.67) (xy 66.04 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f3fed07-b2da-4c73-9cd1-fae3385a51d3")
+	)
+	(wire
+		(pts
+			(xy 66.04 157.48) (xy 66.04 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f5f6280-6838-407a-9107-287052dd7a37")
+	)
+	(wire
+		(pts
+			(xy 99.06 95.25) (xy 99.06 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1191244-4156-465c-9af8-86665abd9f44")
+	)
+	(wire
+		(pts
+			(xy 102.87 165.1) (xy 102.87 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a12daa1d-a769-411c-a699-9290c36a8d67")
+	)
+	(wire
+		(pts
+			(xy 73.66 95.25) (xy 73.66 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3792f2c-a936-4a74-a7e3-4d47516f013f")
+	)
+	(wire
+		(pts
+			(xy 54.61 95.25) (xy 54.61 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5d92e12-aadc-4a1e-a9bc-d31b09dc9b22")
+	)
+	(wire
+		(pts
+			(xy 48.26 95.25) (xy 48.26 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a60a3fd8-915a-4d4a-9263-1ff8a1fdec60")
+	)
+	(wire
+		(pts
+			(xy 44.45 78.74) (xy 118.11 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6eaf308-f634-44d6-9277-34c28e100553")
+	)
+	(wire
+		(pts
+			(xy 273.05 59.69) (xy 273.05 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad49972f-aca7-4d9a-8d50-17ce96763ae7")
+	)
+	(wire
+		(pts
+			(xy 203.2 80.01) (xy 204.47 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af82500d-df76-4eac-8447-9a986fee150c")
+	)
+	(wire
+		(pts
+			(xy 102.87 153.67) (xy 102.87 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b073d798-3bdf-4e5c-8064-dc0b5b2b1125")
+	)
+	(wire
+		(pts
+			(xy 44.45 68.58) (xy 92.71 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2061a25-1453-493e-b26e-1ed3fab0eb32")
+	)
+	(wire
+		(pts
+			(xy 44.45 50.8) (xy 48.26 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b340fcbf-c415-43d5-97e7-74a0a51c2ab7")
+	)
+	(wire
+		(pts
+			(xy 124.46 96.52) (xy 130.81 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3712cec-ea3c-42a8-82c3-fe5c5e28a05b")
+	)
+	(wire
+		(pts
+			(xy 44.45 63.5) (xy 80.01 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6d4928b-1299-4b60-8b7b-a4b19c2912f2")
+	)
+	(wire
+		(pts
+			(xy 86.36 95.25) (xy 86.36 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b765bbf5-ff03-407f-8734-b729bef7a6a2")
+	)
+	(wire
+		(pts
+			(xy 111.76 153.67) (xy 111.76 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb779db0-4d55-4fc5-a9f6-94dd568afe80")
+	)
+	(wire
+		(pts
+			(xy 80.01 63.5) (xy 80.01 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb7cc29d-fbad-4e9e-a7d8-f5afbd5df236")
+	)
+	(wire
+		(pts
+			(xy 130.81 45.72) (xy 152.4 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcb2ae59-b67b-4d4b-be26-d9afa92b5e24")
+	)
+	(wire
+		(pts
+			(xy 204.47 77.47) (xy 204.47 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be0200e6-0c37-4085-a78a-e5c1866c802d")
+	)
+	(wire
+		(pts
+			(xy 99.06 71.12) (xy 152.4 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0b5441f-65bd-4295-ac09-17e3648ba949")
+	)
+	(wire
+		(pts
+			(xy 91.44 168.91) (xy 93.98 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2c603c7-2b8c-48a2-9f0a-72084ada63f8")
+	)
+	(wire
+		(pts
+			(xy 204.47 80.01) (xy 204.47 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3db633e-6303-4461-a61e-abd0b480d3f5")
+	)
+	(wire
+		(pts
+			(xy 124.46 81.28) (xy 124.46 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6917dbe-4795-4627-9c1c-9dab2e78c8f3")
+	)
+	(wire
+		(pts
+			(xy 68.58 157.48) (xy 66.04 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb99123a-1cbe-4b4e-9d03-271d633ea8d7")
+	)
+	(wire
+		(pts
+			(xy 118.11 78.74) (xy 118.11 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd1399c3-3de2-4126-a23d-afb93e105f79")
+	)
+	(wire
+		(pts
+			(xy 93.98 168.91) (xy 93.98 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd6728ed-1a89-45c6-aaf9-2478496752b4")
+	)
+	(wire
+		(pts
+			(xy 203.2 77.47) (xy 204.47 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cea52569-95d6-4c70-8309-0f5b802aa147")
+	)
+	(wire
+		(pts
+			(xy 246.38 76.2) (xy 246.38 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cea975b7-9b2f-47a8-b7bd-89b3ec41d1a1")
+	)
+	(wire
+		(pts
+			(xy 264.16 59.69) (xy 265.43 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1986571-e3ac-4c5d-9844-e7adade5328a")
+	)
+	(wire
+		(pts
+			(xy 44.45 81.28) (xy 124.46 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1e559c2-4235-4396-9c43-15d521f392ea")
+	)
+	(wire
+		(pts
+			(xy 273.05 46.99) (xy 273.05 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d25dd2d5-c9f6-4ec1-b9a3-777e8b7fedd9")
+	)
+	(wire
+		(pts
+			(xy 273.05 50.8) (xy 273.05 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d40f573a-5089-4b7f-978b-49eb618f860a")
+	)
+	(wire
+		(pts
+			(xy 149.86 88.9) (xy 149.86 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d49cdcab-53c9-421f-8ea6-d9928a16d350")
+	)
+	(wire
+		(pts
+			(xy 203.2 85.09) (xy 204.47 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d731c2a3-9487-4277-b3a7-2fc39fc4ca95")
+	)
+	(wire
+		(pts
+			(xy 105.41 73.66) (xy 152.4 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d753dd14-2635-4624-ad61-7ae01d6bb929")
+	)
+	(wire
+		(pts
+			(xy 44.45 60.96) (xy 73.66 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8023367-81e5-4ea0-ad66-9832fb853901")
+	)
+	(wire
+		(pts
+			(xy 264.16 77.47) (xy 265.43 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9a1fea4-188e-4e99-ba5a-f5ccab464c8f")
+	)
+	(wire
+		(pts
+			(xy 80.01 63.5) (xy 152.4 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da32c213-ceba-49cf-b0f1-219f5c45d985")
+	)
+	(wire
+		(pts
+			(xy 130.81 95.25) (xy 130.81 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da4ebded-8f1b-447f-ad47-e0fda30644db")
+	)
+	(polyline
+		(pts
+			(xy 16.51 115.57) (xy 278.13 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db6bf31f-2128-44ff-80b5-589fd77f2e00")
+	)
+	(wire
+		(pts
+			(xy 73.66 96.52) (xy 80.01 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbfc37d3-d6b0-469b-b376-b8cad223b204")
+	)
+	(wire
+		(pts
+			(xy 111.76 153.67) (xy 102.87 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc6563dc-337b-4637-8520-4f6559b706c4")
+	)
+	(wire
+		(pts
+			(xy 54.61 96.52) (xy 60.96 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "def840a8-361a-4db9-aafc-009846715257")
+	)
+	(wire
+		(pts
+			(xy 250.19 83.82) (xy 250.19 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e07bf4e4-bff9-47f8-987f-d529134c1954")
+	)
+	(wire
+		(pts
+			(xy 207.01 49.53) (xy 207.01 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0ce5005-d968-4a75-84d6-34d55fdedbd3")
+	)
+	(wire
+		(pts
+			(xy 203.2 49.53) (xy 207.01 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4321184-d66e-43bb-8771-5a30a054506d")
+	)
+	(wire
+		(pts
+			(xy 54.61 53.34) (xy 152.4 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e594dcb7-ca51-4cf7-8fa0-49d257f940c7")
+	)
+	(wire
+		(pts
+			(xy 204.47 85.09) (xy 204.47 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e768b7f6-a96b-4fb2-9f7a-00ef81610176")
+	)
+	(wire
+		(pts
+			(xy 99.06 96.52) (xy 105.41 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8c184f0-ced7-4910-9b65-93e0f9ede76b")
+	)
+	(wire
+		(pts
+			(xy 66.04 153.67) (xy 68.58 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb3b1bc7-7e2e-4fba-888d-fbbdfd75f642")
+	)
+	(wire
+		(pts
+			(xy 118.11 78.74) (xy 152.4 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1a4a655-1644-4afd-a5df-10204563e803")
+	)
+	(wire
+		(pts
+			(xy 246.38 50.8) (xy 256.54 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3f3e9ba-8bde-4981-8bc9-a156b949f5e1")
+	)
+	(wire
+		(pts
+			(xy 124.46 81.28) (xy 152.4 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4f65cf4-57f4-4e95-b158-e5b6fa537179")
+	)
+	(wire
+		(pts
+			(xy 92.71 68.58) (xy 152.4 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8f2d943-8542-4f25-86c9-b9354a43c202")
+	)
+	(wire
+		(pts
+			(xy 44.45 35.56) (xy 130.81 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa8a8f2e-5128-46ad-abe7-a323e061c044")
+	)
+	(wire
+		(pts
+			(xy 44.45 55.88) (xy 60.96 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc1a0858-dc93-4eaa-abfc-5cb19bed9286")
+	)
+	(wire
+		(pts
+			(xy 270.51 68.58) (xy 273.05 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc8a7361-d7f3-4b54-89c9-c7aad371d5e4")
+	)
+	(wire
+		(pts
+			(xy 203.2 74.93) (xy 204.47 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffd08d53-30b7-4e37-9c92-246e48e1c0c4")
+	)
+	(global_label "NOTE_ON"
+		(shape output)
+		(at 154.94 97.79 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2ea4f3bc-9381-4566-ae24-8df9ae699048")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 166.3314 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PWM_OUT"
+		(shape output)
+		(at 154.94 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c1aa2453-dfbd-475d-ba36-9f8f26d61c53")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 166.6942 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_R-1M")
+		(at 99.06 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "04ca5825-2e14-4b6c-bd95-c6c3d939af22")
+		(property "Reference" "R33"
+			(at 95.25 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1MΩ"
+			(at 97.028 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_Res"
+			(at 99.06 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MΩ Through Hole Resistor (Generic)"
+			(at 99.06 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.03"
+			(at 99.06 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF0W4FF1004"
+			(at 99.06 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Royal Ohm"
+			(at 99.06 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "11c4560c-37e7-4103-af2c-c5993ff79928")
+		)
+		(pin "1"
+			(uuid "1633abf2-9015-4a3b-ab75-9f39989a1ab9")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "R33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_R-100")
+		(at 260.35 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "07079a71-26c5-4830-8f00-3da5822c66d7")
+		(property "Reference" "R43"
+			(at 260.35 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100Ω"
+			(at 260.35 75.438 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_Res"
+			(at 260.35 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 260.35 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100Ω Through Hole Resistor (Generic)"
+			(at 260.35 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.03"
+			(at 260.35 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF0W4FF1000"
+			(at 260.35 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Royal Ohm"
+			(at 260.35 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e7ac5a16-cb8b-4c3a-a50e-dd0e741694c7")
+		)
+		(pin "2"
+			(uuid "36bd734e-b5b6-487b-9083-df940a68e18c")
+		)
+		(instances
+			(project ""
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_R-1M")
+		(at 67.31 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1518ab4b-a2fe-4e10-ac95-9b666c4f34c0")
+		(property "Reference" "R28"
+			(at 63.5 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1MΩ"
+			(at 65.278 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_Res"
+			(at 67.31 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MΩ Through Hole Resistor (Generic)"
+			(at 67.31 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.03"
+			(at 67.31 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF0W4FF1004"
+			(at 67.31 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Royal Ohm"
+			(at 67.31 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "eb926a6b-b202-4d64-893c-e38e8e83da85")
+		)
+		(pin "1"
+			(uuid "738a9499-9e0b-4fc2-b178-ce957b87eeb8")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "R28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_R-100")
+		(at 260.35 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "16f8545b-8a5d-4f19-91c3-88a3ca722dee")
+		(property "Reference" "R44"
+			(at 260.35 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100Ω"
+			(at 260.35 84.328 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_Res"
+			(at 260.35 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 260.35 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100Ω Through Hole Resistor (Generic)"
+			(at 260.35 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.03"
+			(at 260.35 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF0W4FF1000"
+			(at 260.35 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Royal Ohm"
+			(at 260.35 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e7ac5a16-cb8b-4c3a-a50e-dd0e741694c8")
+		)
+		(pin "2"
+			(uuid "36bd734e-b5b6-487b-9083-df940a68e18d")
+		)
+		(instances
+			(project ""
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "R44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_R-1M")
+		(at 118.11 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1739afd7-96a6-44ff-b187-d8145d1109d1")
+		(property "Reference" "R36"
+			(at 114.3 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1MΩ"
+			(at 116.078 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_Res"
+			(at 118.11 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MΩ Through Hole Resistor (Generic)"
+			(at 118.11 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.03"
+			(at 118.11 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF0W4FF1004"
+			(at 118.11 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Royal Ohm"
+			(at 118.11 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ea4e3d55-53cd-4eb1-b8c3-c5b03dc62c42")
+		)
+		(pin "1"
+			(uuid "715195a3-3f4c-41c3-9e66-9ba40179910c")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "R36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_R-100")
+		(at 260.35 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "17be6a4a-fcaf-43b9-9e08-7dad5132881a")
+		(property "Reference" "R41"
+			(at 260.35 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100Ω"
+			(at 260.35 57.658 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_Res"
+			(at 260.35 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 260.35 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100Ω Through Hole Resistor (Generic)"
+			(at 260.35 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.03"
+			(at 260.35 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF0W4FF1000"
+			(at 260.35 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Royal Ohm"
+			(at 260.35 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e7ac5a16-cb8b-4c3a-a50e-dd0e741694c9")
+		)
+		(pin "2"
+			(uuid "36bd734e-b5b6-487b-9083-df940a68e18e")
+		)
+		(instances
+			(project ""
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "R41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_R-1M")
+		(at 73.66 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1ae1a76d-ead4-4376-b31b-58909e547d32")
+		(property "Reference" "R29"
+			(at 69.85 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1MΩ"
+			(at 71.628 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_Res"
+			(at 73.66 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MΩ Through Hole Resistor (Generic)"
+			(at 73.66 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.03"
+			(at 73.66 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF0W4FF1004"
+			(at 73.66 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Royal Ohm"
+			(at 73.66 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b6733108-afa2-452e-bcb1-b22b4f79e4de")
+		)
+		(pin "1"
+			(uuid "8d851444-7304-4d81-90c9-5d2a1b021441")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "R29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 273.05 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "211e50f9-49ab-42b2-9300-eabb85124f8d")
+		(property "Reference" "#PWR029"
+			(at 273.05 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 273.05 43.434 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 273.05 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 273.05 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 273.05 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bfe55d5c-57c8-433c-97cf-5c0b3b5ecda5")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_R-1M")
+		(at 92.71 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "22b639d2-9487-4f88-bfff-d9ba4216de08")
+		(property "Reference" "R32"
+			(at 88.9 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1MΩ"
+			(at 90.678 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_Res"
+			(at 92.71 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MΩ Through Hole Resistor (Generic)"
+			(at 92.71 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.03"
+			(at 92.71 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF0W4FF1004"
+			(at 92.71 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Royal Ohm"
+			(at 92.71 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f1248b85-dca4-48f2-9d04-55d9e884301f")
+		)
+		(pin "1"
+			(uuid "da536df3-e7d2-460a-9df4-1be9be441374")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_LED_RED_5mm")
+		(at 267.97 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "25d249dd-d244-4837-9c93-25937a0e7739")
+		(property "Reference" "D7"
+			(at 267.97 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Red"
+			(at 267.97 48.26 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_LED_D5.0mm"
+			(at 267.97 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 267.97 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Red LED, 5mm, 2.1V, 20mA"
+			(at 267.97 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.034"
+			(at 267.97 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "1573708"
+			(at 267.97 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TruComponents"
+			(at 267.97 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "K"
+			(uuid "fb1c9e3d-cfb2-433d-a9c8-960b0d5c50df")
+		)
+		(pin "A"
+			(uuid "07598dc6-806b-4e26-9691-bc5691bd131e")
+		)
+		(instances
+			(project ""
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_15mm_TOUCH")
+		(at 44.45 35.56 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2adadcc3-00e9-4977-965e-1a8bd94cd7a8")
+		(property "Reference" "J2"
+			(at 32.512 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "15mm Touch"
+			(at 44.45 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "LiveWires:BASIC_TOUCH_PAD_15mm"
+			(at 44.45 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "15mm touch pad"
+			(at 44.45 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c7c9f006-669d-4b70-b03e-fd33942edb20")
+		)
+		(instances
+			(project ""
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_Pico")
+		(at 152.4 63.5 0)
+		(mirror x)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2ff9f23e-8b81-49ac-b8e1-a9c89d2451cb")
+		(property "Reference" "U4"
+			(at 165.608 47.498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Pi Pico"
+			(at 165.608 45.466 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_RPi_Pico_SMD_TH"
+			(at 152.4 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Pi Pico, no headers, no wireless"
+			(at 152.4 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "3.00"
+			(at 152.4 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SC0915"
+			(at 152.4 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Raspberry Pi"
+			(at 152.4 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "39"
+			(uuid "e4925175-776d-4e0f-a0de-ae1258c1c1ee")
+		)
+		(pin "15"
+			(uuid "e12bd70e-87bc-4c17-b1fe-929a0e39883a")
+		)
+		(pin "32"
+			(uuid "6c9176e2-a5db-415d-af02-447256d5f970")
+		)
+		(pin "11"
+			(uuid "9bd72b6c-6e81-49b7-97a2-ee80ddfa63e0")
+		)
+		(pin "19"
+			(uuid "26d4fa2a-6e91-46b5-97b9-273751ef90f2")
+		)
+		(pin "21"
+			(uuid "e76131c7-6cfa-4b13-8897-adfa8a321a39")
+		)
+		(pin "31"
+			(uuid "d5dfaacf-999e-4c3d-8d10-f74273a7b093")
+		)
+		(pin "29"
+			(uuid "a8a19d6a-7396-497a-b7bb-d6d74eb6f6e6")
+		)
+		(pin "14"
+			(uuid "3e700a5c-4cc3-45a2-adab-60e564d3dba0")
+		)
+		(pin "20"
+			(uuid "b895f679-f565-46f6-b614-15e45c3f3dc7")
+		)
+		(pin "40"
+			(uuid "076957db-bc1e-411f-b99f-40d74ca91711")
+		)
+		(pin "1"
+			(uuid "83449e0e-8b93-4a4f-96b5-7109dd082eb0")
+		)
+		(pin "17"
+			(uuid "717710e3-c6bb-4138-a329-559cfe100eb1")
+		)
+		(pin "27"
+			(uuid "58976410-393d-40bc-bcc0-63a9229cb893")
+		)
+		(pin "18"
+			(uuid "68bcc756-101f-4e81-99d9-c9d9606b8c92")
+		)
+		(pin "24"
+			(uuid "9779b05a-4d54-4126-9a9b-664c7ecfd81e")
+		)
+		(pin "10"
+			(uuid "fe80cca7-2fa1-42f9-9b5f-315fda54679d")
+		)
+		(pin "30"
+			(uuid "2ead6b80-4c8a-4800-9088-aa363e86d9a4")
+		)
+		(pin "7"
+			(uuid "98f7ed4a-51a6-478a-90ac-c4c0585b2f6f")
+		)
+		(pin "34"
+			(uuid "fbc4acbb-1e81-416a-8639-80c4f269f241")
+		)
+		(pin "2"
+			(uuid "a2801bbb-3055-4670-bf8d-9fc92862c0da")
+		)
+		(pin "23"
+			(uuid "a0475e60-caac-4769-8349-23b9b9dc5846")
+		)
+		(pin "4"
+			(uuid "d840d886-026a-44fa-be02-eff3aa3e05ec")
+		)
+		(pin "35"
+			(uuid "cdec934d-63fd-472d-ba4e-803b3b750598")
+		)
+		(pin "13"
+			(uuid "9b929c65-d3c0-420c-91aa-a7c2543bdc95")
+		)
+		(pin "26"
+			(uuid "e3aa0923-f64b-415c-a18f-33aa8801e5af")
+		)
+		(pin "28"
+			(uuid "a2986abc-f076-41da-ae53-9446382b36c6")
+		)
+		(pin "5"
+			(uuid "2a54de81-f85e-43a2-b121-e11d5b707ac7")
+		)
+		(pin "38"
+			(uuid "f5006e42-15ed-4cf4-891d-33a68495bee5")
+		)
+		(pin "25"
+			(uuid "44890a1e-df75-4d90-ada6-520ddeb83398")
+		)
+		(pin "6"
+			(uuid "3b4632cc-8f34-49fa-a82f-dfd27d0b7c93")
+		)
+		(pin "12"
+			(uuid "a5a1ad3f-113f-4def-8737-28c9edfc651c")
+		)
+		(pin "37"
+			(uuid "74d5f432-1a20-4005-8e9a-2388ba276cfb")
+		)
+		(pin "16"
+			(uuid "587a7bb7-bb4f-4331-8d3b-85c38bbb6f27")
+		)
+		(pin "8"
+			(uuid "2125b0dc-00c9-469d-8828-4e436ed085b3")
+		)
+		(pin "3"
+			(uuid "5cb96221-9bc1-43fd-afa0-381b90bd8334")
+		)
+		(pin "9"
+			(uuid "388a3ef9-a1ac-4bb2-9b13-2a682332b289")
+		)
+		(pin "33"
+			(uuid "95ddc7ec-9cdd-48de-89b0-82712db5eb56")
+		)
+		(pin "36"
+			(uuid "4af84fb0-f52e-41a0-ac19-b9fc828aef07")
+		)
+		(pin "22"
+			(uuid "ed8d3547-a592-4356-b3ff-72c12166566c")
+		)
+		(instances
+			(project ""
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "U4")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_TC1044S")
+		(at 68.58 153.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "30b16816-ba92-4bff-a552-eacbb1d35e56")
+		(property "Reference" "U5"
+			(at 71.12 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TC1044S"
+			(at 71.12 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_DIP8"
+			(at 68.58 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Charge pump DC-DC negative V generator"
+			(at 68.58 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "1.188"
+			(at 68.58 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "TC1044SCPA"
+			(at 68.58 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Microchip"
+			(at 68.58 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "2be80ab9-beea-4be4-8a3b-55b5270491d7")
+		)
+		(pin "3"
+			(uuid "0dc0f9cd-15e2-4088-9c20-e838e6bef4a0")
+		)
+		(pin "6"
+			(uuid "9f95f85a-0640-46c1-955e-ad629c8c1bea")
+		)
+		(pin "5"
+			(uuid "682c4a23-5917-4075-b202-d22b658eaf89")
+		)
+		(pin "2"
+			(uuid "9527f99b-3da0-4cab-8ec5-a71d090c089a")
+		)
+		(pin "4"
+			(uuid "36a6111d-432c-4737-9530-671a8aaf7263")
+		)
+		(pin "1"
+			(uuid "7728d5f6-2a26-42ef-abfb-034d6f8632f7")
+		)
+		(pin "8"
+			(uuid "6debc26c-c46f-4dbe-8deb-f2201c21f1df")
+		)
+		(instances
+			(project ""
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_LED_RED_5mm")
+		(at 267.97 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "31cce687-48ea-4f62-980f-37fb85ef3432")
+		(property "Reference" "D9"
+			(at 267.97 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Red"
+			(at 267.97 66.04 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_LED_D5.0mm"
+			(at 267.97 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 267.97 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Red LED, 5mm, 2.1V, 20mA"
+			(at 267.97 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.034"
+			(at 267.97 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "1573708"
+			(at 267.97 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TruComponents"
+			(at 267.97 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "K"
+			(uuid "fb1c9e3d-cfb2-433d-a9c8-960b0d5c50e0")
+		)
+		(pin "A"
+			(uuid "07598dc6-806b-4e26-9691-bc5691bd131f")
+		)
+		(instances
+			(project ""
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_Pico")
+		(at 200.66 49.53 0)
+		(mirror y)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "324abc58-4e8e-4302-94df-8127161008d5")
+		(property "Reference" "U4"
+			(at 187.452 49.276 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Pi Pico"
+			(at 187.452 51.308 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_RPi_Pico_SMD_TH"
+			(at 200.66 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Pi Pico, no headers, no wireless"
+			(at 200.66 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "3.00"
+			(at 200.66 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SC0915"
+			(at 200.66 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Raspberry Pi"
+			(at 200.66 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "39"
+			(uuid "e4925175-776d-4e0f-a0de-ae1258c1c1ef")
+		)
+		(pin "15"
+			(uuid "e12bd70e-87bc-4c17-b1fe-929a0e39883b")
+		)
+		(pin "32"
+			(uuid "6c9176e2-a5db-415d-af02-447256d5f971")
+		)
+		(pin "11"
+			(uuid "9bd72b6c-6e81-49b7-97a2-ee80ddfa63e1")
+		)
+		(pin "19"
+			(uuid "26d4fa2a-6e91-46b5-97b9-273751ef90f3")
+		)
+		(pin "21"
+			(uuid "e76131c7-6cfa-4b13-8897-adfa8a321a3a")
+		)
+		(pin "31"
+			(uuid "d5dfaacf-999e-4c3d-8d10-f74273a7b094")
+		)
+		(pin "29"
+			(uuid "a8a19d6a-7396-497a-b7bb-d6d74eb6f6e7")
+		)
+		(pin "14"
+			(uuid "3e700a5c-4cc3-45a2-adab-60e564d3dba1")
+		)
+		(pin "20"
+			(uuid "b895f679-f565-46f6-b614-15e45c3f3dc8")
+		)
+		(pin "40"
+			(uuid "076957db-bc1e-411f-b99f-40d74ca91712")
+		)
+		(pin "1"
+			(uuid "83449e0e-8b93-4a4f-96b5-7109dd082eb1")
+		)
+		(pin "17"
+			(uuid "717710e3-c6bb-4138-a329-559cfe100eb2")
+		)
+		(pin "27"
+			(uuid "58976410-393d-40bc-bcc0-63a9229cb894")
+		)
+		(pin "18"
+			(uuid "68bcc756-101f-4e81-99d9-c9d9606b8c93")
+		)
+		(pin "24"
+			(uuid "9779b05a-4d54-4126-9a9b-664c7ecfd81f")
+		)
+		(pin "10"
+			(uuid "fe80cca7-2fa1-42f9-9b5f-315fda54679e")
+		)
+		(pin "30"
+			(uuid "2ead6b80-4c8a-4800-9088-aa363e86d9a5")
+		)
+		(pin "7"
+			(uuid "98f7ed4a-51a6-478a-90ac-c4c0585b2f70")
+		)
+		(pin "34"
+			(uuid "fbc4acbb-1e81-416a-8639-80c4f269f242")
+		)
+		(pin "2"
+			(uuid "a2801bbb-3055-4670-bf8d-9fc92862c0db")
+		)
+		(pin "23"
+			(uuid "a0475e60-caac-4769-8349-23b9b9dc5847")
+		)
+		(pin "4"
+			(uuid "d840d886-026a-44fa-be02-eff3aa3e05ed")
+		)
+		(pin "35"
+			(uuid "cdec934d-63fd-472d-ba4e-803b3b750599")
+		)
+		(pin "13"
+			(uuid "9b929c65-d3c0-420c-91aa-a7c2543bdc96")
+		)
+		(pin "26"
+			(uuid "e3aa0923-f64b-415c-a18f-33aa8801e5b0")
+		)
+		(pin "28"
+			(uuid "a2986abc-f076-41da-ae53-9446382b36c7")
+		)
+		(pin "5"
+			(uuid "2a54de81-f85e-43a2-b121-e11d5b707ac8")
+		)
+		(pin "38"
+			(uuid "f5006e42-15ed-4cf4-891d-33a68495bee6")
+		)
+		(pin "25"
+			(uuid "44890a1e-df75-4d90-ada6-520ddeb83399")
+		)
+		(pin "6"
+			(uuid "3b4632cc-8f34-49fa-a82f-dfd27d0b7c94")
+		)
+		(pin "12"
+			(uuid "a5a1ad3f-113f-4def-8737-28c9edfc651d")
+		)
+		(pin "37"
+			(uuid "74d5f432-1a20-4005-8e9a-2388ba276cfc")
+		)
+		(pin "16"
+			(uuid "587a7bb7-bb4f-4331-8d3b-85c38bbb6f28")
+		)
+		(pin "8"
+			(uuid "2125b0dc-00c9-469d-8828-4e436ed085b4")
+		)
+		(pin "3"
+			(uuid "5cb96221-9bc1-43fd-afa0-381b90bd8335")
+		)
+		(pin "9"
+			(uuid "388a3ef9-a1ac-4bb2-9b13-2a682332b28a")
+		)
+		(pin "33"
+			(uuid "95ddc7ec-9cdd-48de-89b0-82712db5eb57")
+		)
+		(pin "36"
+			(uuid "4af84fb0-f52e-41a0-ac19-b9fc828aef08")
+		)
+		(pin "22"
+			(uuid "ed8d3547-a592-4356-b3ff-72c12166566d")
+		)
+		(instances
+			(project ""
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "U4")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_C-1u")
+		(at 102.87 162.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3381956c-fa39-41cf-84a5-c24be8fe661d")
+		(property "Reference" "C10"
+			(at 104.648 161.544 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1µF"
+			(at 104.648 163.322 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_CeramicCap_5.08mm"
+			(at 102.87 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1µF Ceramic Capacitor (generic)"
+			(at 102.87 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.07"
+			(at 102.87 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "TS170R1H105MSBFB0R"
+			(at 102.87 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Suntan"
+			(at 102.87 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a95851ac-f0d2-4a5c-8fe3-d1ff026f92d7")
+		)
+		(pin "1"
+			(uuid "a024258c-7614-456b-a69d-d4d3cf698bc0")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_R-100")
+		(at 260.35 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "343dc9f5-b357-4631-a5a4-34996a33019c")
+		(property "Reference" "R42"
+			(at 260.35 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100Ω"
+			(at 260.35 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_Res"
+			(at 260.35 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 260.35 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100Ω Through Hole Resistor (Generic)"
+			(at 260.35 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.03"
+			(at 260.35 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF0W4FF1000"
+			(at 260.35 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Royal Ohm"
+			(at 260.35 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e7ac5a16-cb8b-4c3a-a50e-dd0e741694ca")
+		)
+		(pin "2"
+			(uuid "36bd734e-b5b6-487b-9083-df940a68e18f")
+		)
+		(instances
+			(project ""
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "R42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_R-100")
+		(at 260.35 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3a227fa1-3161-4b23-b259-3d5476e1ef9c")
+		(property "Reference" "R40"
+			(at 260.35 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100Ω"
+			(at 260.35 48.768 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_Res"
+			(at 260.35 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 260.35 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100Ω Through Hole Resistor (Generic)"
+			(at 260.35 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.03"
+			(at 260.35 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF0W4FF1000"
+			(at 260.35 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Royal Ohm"
+			(at 260.35 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e7ac5a16-cb8b-4c3a-a50e-dd0e741694cb")
+		)
+		(pin "2"
+			(uuid "36bd734e-b5b6-487b-9083-df940a68e190")
+		)
+		(instances
+			(project ""
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:-5V")
+		(at 111.76 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "40c9a386-9d8e-4bcb-94a0-a73f1c635fce")
+		(property "Reference" "#PWR022"
+			(at 111.76 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-5V"
+			(at 111.76 147.574 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-5V\""
+			(at 111.76 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6efb1255-0246-4f04-8b5b-4c6f75fec5d4")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_R-1M")
+		(at 86.36 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "460c67f7-2eeb-43a7-bb5e-a966e319f701")
+		(property "Reference" "R31"
+			(at 82.55 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1MΩ"
+			(at 84.328 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_Res"
+			(at 86.36 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MΩ Through Hole Resistor (Generic)"
+			(at 86.36 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.03"
+			(at 86.36 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF0W4FF1004"
+			(at 86.36 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Royal Ohm"
+			(at 86.36 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f24679c1-f9d3-4509-aadc-e817baed0ee5")
+		)
+		(pin "1"
+			(uuid "2bb41d5f-0435-4474-8295-1c65e24194a3")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_R-1M")
+		(at 111.76 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4831e9ff-0c19-4202-a258-f1b1b65c817f")
+		(property "Reference" "R35"
+			(at 107.95 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1MΩ"
+			(at 109.728 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_Res"
+			(at 111.76 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MΩ Through Hole Resistor (Generic)"
+			(at 111.76 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.03"
+			(at 111.76 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF0W4FF1004"
+			(at 111.76 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Royal Ohm"
+			(at 111.76 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "12f7fbb1-8866-4567-9bf1-25c8e18b0391")
+		)
+		(pin "1"
+			(uuid "5eafbd81-5077-4562-af62-5906e15ffea1")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "R35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_R-1M")
+		(at 137.16 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4bf1643b-b349-4d88-8e2f-d8a242f4b1ae")
+		(property "Reference" "R39"
+			(at 133.35 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1MΩ"
+			(at 135.128 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_Res"
+			(at 137.16 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MΩ Through Hole Resistor (Generic)"
+			(at 137.16 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.03"
+			(at 137.16 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF0W4FF1004"
+			(at 137.16 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Royal Ohm"
+			(at 137.16 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fba9b1fa-b766-432a-bb96-3598a371db3b")
+		)
+		(pin "1"
+			(uuid "e63e043c-fd6e-438d-b831-ac090dd5d762")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "R39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_C-1u")
+		(at 93.98 162.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "57489f18-0380-482a-9514-0e6c2a646307")
+		(property "Reference" "C9"
+			(at 95.758 161.544 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1µF"
+			(at 95.758 163.322 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_CeramicCap_5.08mm"
+			(at 93.98 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1µF Ceramic Capacitor (generic)"
+			(at 93.98 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.07"
+			(at 93.98 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "TS170R1H105MSBFB0R"
+			(at 93.98 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Suntan"
+			(at 93.98 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9470b6f5-0c8c-4fbd-bcfd-2e3b505d32ae")
+		)
+		(pin "1"
+			(uuid "b57a670b-e948-451d-904b-d14b10e44d7f")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_PIANO")
+		(at 44.45 81.28 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "65d5455c-ad05-4166-b2b5-d88a19513d19")
+		(property "Reference" "J1"
+			(at 34.036 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Keyboard"
+			(at 34.036 46.736 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_PIANO"
+			(at 44.45 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Piano Keyboard, 1 octave"
+			(at 44.45 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "10"
+			(uuid "13d59872-22ed-415f-8409-92c94d23b5e4")
+		)
+		(pin "12"
+			(uuid "fcc7b35c-507b-45ea-8298-18c8ecd1286b")
+		)
+		(pin "8"
+			(uuid "40708a63-8eb5-45c2-bf8e-ecdcb5f24f70")
+		)
+		(pin "5"
+			(uuid "5cb5f578-4ddd-41c3-902d-042c1abcd46a")
+		)
+		(pin "9"
+			(uuid "1c922505-b97a-4654-95fd-729c23a8ca1f")
+		)
+		(pin "4"
+			(uuid "0277d0fb-e044-4a27-92ab-d46f22c7bab2")
+		)
+		(pin "11"
+			(uuid "62ed4f37-03d7-4977-92c8-e800c1176c87")
+		)
+		(pin "13"
+			(uuid "f052372d-daca-40a0-8319-433e3911a08d")
+		)
+		(pin "1"
+			(uuid "7c897667-09d3-4090-b00a-abc7763270c0")
+		)
+		(pin "2"
+			(uuid "3d0d3847-6375-4c6f-b18f-2e5bc929bf6b")
+		)
+		(pin "7"
+			(uuid "0e31013a-5e66-4558-847b-9bbd6924f13e")
+		)
+		(pin "6"
+			(uuid "82856f3e-9f6a-4c28-9c71-332847c0f0fc")
+		)
+		(pin "3"
+			(uuid "cc30e2fd-918e-41cf-ad21-dc4bc61821da")
+		)
+		(instances
+			(project ""
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_R-1M")
+		(at 54.61 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "69d8c84d-d766-42ca-8a01-94e4f7f8afe1")
+		(property "Reference" "R26"
+			(at 50.8 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1MΩ"
+			(at 52.578 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_Res"
+			(at 54.61 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MΩ Through Hole Resistor (Generic)"
+			(at 54.61 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.03"
+			(at 54.61 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF0W4FF1004"
+			(at 54.61 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Royal Ohm"
+			(at 54.61 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "69e9bd6e-7043-408d-a62a-02efe0bdf10d")
+		)
+		(pin "1"
+			(uuid "70b5345c-b2f8-4b53-96ea-ad97a63bde01")
+		)
+		(instances
+			(project ""
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_LED_RED_5mm")
+		(at 267.97 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "71ba80a8-b692-4132-a581-72651e13c839")
+		(property "Reference" "D8"
+			(at 267.97 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Red"
+			(at 267.97 57.15 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_LED_D5.0mm"
+			(at 267.97 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 267.97 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Red LED, 5mm, 2.1V, 20mA"
+			(at 267.97 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.034"
+			(at 267.97 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "1573708"
+			(at 267.97 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TruComponents"
+			(at 267.97 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "K"
+			(uuid "fb1c9e3d-cfb2-433d-a9c8-960b0d5c50e1")
+		)
+		(pin "A"
+			(uuid "07598dc6-806b-4e26-9691-bc5691bd1320")
+		)
+		(instances
+			(project ""
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 207.01 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "786ab8cb-3838-4f29-bde5-07b7f87dabcd")
+		(property "Reference" "#PWR027"
+			(at 207.01 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 207.01 43.434 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 207.01 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 207.01 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 207.01 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "452e9b24-372b-43bc-99bb-4bbde3c02c4d")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_15mm_TOUCH")
+		(at 44.45 39.37 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7e0c9277-ee3a-4627-9499-3b4fbf4cbc65")
+		(property "Reference" "J3"
+			(at 32.512 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "15mm Touch"
+			(at 44.45 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "LiveWires:BASIC_TOUCH_PAD_15mm"
+			(at 44.45 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "15mm touch pad"
+			(at 44.45 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c7c9f006-669d-4b70-b03e-fd33942edb21")
+		)
+		(instances
+			(project ""
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_LED_RED_5mm")
+		(at 267.97 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "81c035fb-e385-4970-ac2c-cf98db7b3f98")
+		(property "Reference" "D10"
+			(at 267.97 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Red"
+			(at 267.97 74.93 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_LED_D5.0mm"
+			(at 267.97 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 267.97 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Red LED, 5mm, 2.1V, 20mA"
+			(at 267.97 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.034"
+			(at 267.97 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "1573708"
+			(at 267.97 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TruComponents"
+			(at 267.97 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "K"
+			(uuid "fb1c9e3d-cfb2-433d-a9c8-960b0d5c50e2")
+		)
+		(pin "A"
+			(uuid "07598dc6-806b-4e26-9691-bc5691bd1321")
+		)
+		(instances
+			(project ""
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_Pico")
+		(at 157.48 66.04 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8516def1-e35c-485b-9908-3dd668b20b62")
+		(property "Reference" "U4"
+			(at 170.688 65.786 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Pi Pico"
+			(at 170.688 67.818 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_RPi_Pico_SMD_TH"
+			(at 157.48 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Pi Pico, no headers, no wireless"
+			(at 157.48 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "3.00"
+			(at 157.48 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SC0915"
+			(at 157.48 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Raspberry Pi"
+			(at 157.48 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "39"
+			(uuid "e4925175-776d-4e0f-a0de-ae1258c1c1f0")
+		)
+		(pin "15"
+			(uuid "e12bd70e-87bc-4c17-b1fe-929a0e39883c")
+		)
+		(pin "32"
+			(uuid "6c9176e2-a5db-415d-af02-447256d5f972")
+		)
+		(pin "11"
+			(uuid "9bd72b6c-6e81-49b7-97a2-ee80ddfa63e2")
+		)
+		(pin "19"
+			(uuid "26d4fa2a-6e91-46b5-97b9-273751ef90f4")
+		)
+		(pin "21"
+			(uuid "e76131c7-6cfa-4b13-8897-adfa8a321a3b")
+		)
+		(pin "31"
+			(uuid "d5dfaacf-999e-4c3d-8d10-f74273a7b095")
+		)
+		(pin "29"
+			(uuid "a8a19d6a-7396-497a-b7bb-d6d74eb6f6e8")
+		)
+		(pin "14"
+			(uuid "3e700a5c-4cc3-45a2-adab-60e564d3dba2")
+		)
+		(pin "20"
+			(uuid "b895f679-f565-46f6-b614-15e45c3f3dc9")
+		)
+		(pin "40"
+			(uuid "076957db-bc1e-411f-b99f-40d74ca91713")
+		)
+		(pin "1"
+			(uuid "83449e0e-8b93-4a4f-96b5-7109dd082eb2")
+		)
+		(pin "17"
+			(uuid "717710e3-c6bb-4138-a329-559cfe100eb3")
+		)
+		(pin "27"
+			(uuid "58976410-393d-40bc-bcc0-63a9229cb895")
+		)
+		(pin "18"
+			(uuid "68bcc756-101f-4e81-99d9-c9d9606b8c94")
+		)
+		(pin "24"
+			(uuid "9779b05a-4d54-4126-9a9b-664c7ecfd820")
+		)
+		(pin "10"
+			(uuid "fe80cca7-2fa1-42f9-9b5f-315fda54679f")
+		)
+		(pin "30"
+			(uuid "2ead6b80-4c8a-4800-9088-aa363e86d9a6")
+		)
+		(pin "7"
+			(uuid "98f7ed4a-51a6-478a-90ac-c4c0585b2f71")
+		)
+		(pin "34"
+			(uuid "fbc4acbb-1e81-416a-8639-80c4f269f243")
+		)
+		(pin "2"
+			(uuid "a2801bbb-3055-4670-bf8d-9fc92862c0dc")
+		)
+		(pin "23"
+			(uuid "a0475e60-caac-4769-8349-23b9b9dc5848")
+		)
+		(pin "4"
+			(uuid "d840d886-026a-44fa-be02-eff3aa3e05ee")
+		)
+		(pin "35"
+			(uuid "cdec934d-63fd-472d-ba4e-803b3b75059a")
+		)
+		(pin "13"
+			(uuid "9b929c65-d3c0-420c-91aa-a7c2543bdc97")
+		)
+		(pin "26"
+			(uuid "e3aa0923-f64b-415c-a18f-33aa8801e5b1")
+		)
+		(pin "28"
+			(uuid "a2986abc-f076-41da-ae53-9446382b36c8")
+		)
+		(pin "5"
+			(uuid "2a54de81-f85e-43a2-b121-e11d5b707ac9")
+		)
+		(pin "38"
+			(uuid "f5006e42-15ed-4cf4-891d-33a68495bee7")
+		)
+		(pin "25"
+			(uuid "44890a1e-df75-4d90-ada6-520ddeb8339a")
+		)
+		(pin "6"
+			(uuid "3b4632cc-8f34-49fa-a82f-dfd27d0b7c95")
+		)
+		(pin "12"
+			(uuid "a5a1ad3f-113f-4def-8737-28c9edfc651e")
+		)
+		(pin "37"
+			(uuid "74d5f432-1a20-4005-8e9a-2388ba276cfd")
+		)
+		(pin "16"
+			(uuid "587a7bb7-bb4f-4331-8d3b-85c38bbb6f29")
+		)
+		(pin "8"
+			(uuid "2125b0dc-00c9-469d-8828-4e436ed085b5")
+		)
+		(pin "3"
+			(uuid "5cb96221-9bc1-43fd-afa0-381b90bd8336")
+		)
+		(pin "9"
+			(uuid "388a3ef9-a1ac-4bb2-9b13-2a682332b28b")
+		)
+		(pin "33"
+			(uuid "95ddc7ec-9cdd-48de-89b0-82712db5eb58")
+		)
+		(pin "36"
+			(uuid "4af84fb0-f52e-41a0-ac19-b9fc828aef09")
+		)
+		(pin "22"
+			(uuid "ed8d3547-a592-4356-b3ff-72c12166566e")
+		)
+		(instances
+			(project ""
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "U4")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 214.63 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "93e1f260-3321-4925-8dab-8cca8abbc9e7")
+		(property "Reference" "#PWR028"
+			(at 214.63 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 214.63 43.434 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 214.63 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 214.63 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "77a80de3-a606-48c5-ae30-1be7b03010fc")
+		)
+		(instances
+			(project ""
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_R-1M")
+		(at 60.96 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9490596c-7341-426e-96b8-840c2501b4c4")
+		(property "Reference" "R27"
+			(at 57.15 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1MΩ"
+			(at 58.928 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_Res"
+			(at 60.96 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MΩ Through Hole Resistor (Generic)"
+			(at 60.96 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.03"
+			(at 60.96 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF0W4FF1004"
+			(at 60.96 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Royal Ohm"
+			(at 60.96 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6e093bb0-3287-49f0-90f8-75d554c9a1e9")
+		)
+		(pin "1"
+			(uuid "59d0cb68-7803-4c7e-8468-fc2cef77f6a6")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 58.42 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a0cbc141-419e-4f3f-b6a2-dbb6aac428b4")
+		(property "Reference" "#PWR021"
+			(at 58.42 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 58.42 147.574 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 58.42 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "12894ff8-64f3-4467-9995-6675a407995f")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_Pico")
+		(at 241.3 68.58 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a880f0b9-6586-4dc6-ac53-e8e52a38f8b0")
+		(property "Reference" "U4"
+			(at 228.092 68.326 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Pi Pico"
+			(at 228.092 70.358 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_RPi_Pico_SMD_TH"
+			(at 241.3 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Pi Pico, no headers, no wireless"
+			(at 241.3 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "3.00"
+			(at 241.3 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SC0915"
+			(at 241.3 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Raspberry Pi"
+			(at 241.3 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "39"
+			(uuid "e4925175-776d-4e0f-a0de-ae1258c1c1f1")
+		)
+		(pin "15"
+			(uuid "e12bd70e-87bc-4c17-b1fe-929a0e39883d")
+		)
+		(pin "32"
+			(uuid "6c9176e2-a5db-415d-af02-447256d5f973")
+		)
+		(pin "11"
+			(uuid "9bd72b6c-6e81-49b7-97a2-ee80ddfa63e3")
+		)
+		(pin "19"
+			(uuid "26d4fa2a-6e91-46b5-97b9-273751ef90f5")
+		)
+		(pin "21"
+			(uuid "e76131c7-6cfa-4b13-8897-adfa8a321a3c")
+		)
+		(pin "31"
+			(uuid "d5dfaacf-999e-4c3d-8d10-f74273a7b096")
+		)
+		(pin "29"
+			(uuid "a8a19d6a-7396-497a-b7bb-d6d74eb6f6e9")
+		)
+		(pin "14"
+			(uuid "3e700a5c-4cc3-45a2-adab-60e564d3dba3")
+		)
+		(pin "20"
+			(uuid "b895f679-f565-46f6-b614-15e45c3f3dca")
+		)
+		(pin "40"
+			(uuid "076957db-bc1e-411f-b99f-40d74ca91714")
+		)
+		(pin "1"
+			(uuid "83449e0e-8b93-4a4f-96b5-7109dd082eb3")
+		)
+		(pin "17"
+			(uuid "717710e3-c6bb-4138-a329-559cfe100eb4")
+		)
+		(pin "27"
+			(uuid "58976410-393d-40bc-bcc0-63a9229cb896")
+		)
+		(pin "18"
+			(uuid "68bcc756-101f-4e81-99d9-c9d9606b8c95")
+		)
+		(pin "24"
+			(uuid "9779b05a-4d54-4126-9a9b-664c7ecfd821")
+		)
+		(pin "10"
+			(uuid "fe80cca7-2fa1-42f9-9b5f-315fda5467a0")
+		)
+		(pin "30"
+			(uuid "2ead6b80-4c8a-4800-9088-aa363e86d9a7")
+		)
+		(pin "7"
+			(uuid "98f7ed4a-51a6-478a-90ac-c4c0585b2f72")
+		)
+		(pin "34"
+			(uuid "fbc4acbb-1e81-416a-8639-80c4f269f244")
+		)
+		(pin "2"
+			(uuid "a2801bbb-3055-4670-bf8d-9fc92862c0dd")
+		)
+		(pin "23"
+			(uuid "a0475e60-caac-4769-8349-23b9b9dc5849")
+		)
+		(pin "4"
+			(uuid "d840d886-026a-44fa-be02-eff3aa3e05ef")
+		)
+		(pin "35"
+			(uuid "cdec934d-63fd-472d-ba4e-803b3b75059b")
+		)
+		(pin "13"
+			(uuid "9b929c65-d3c0-420c-91aa-a7c2543bdc98")
+		)
+		(pin "26"
+			(uuid "e3aa0923-f64b-415c-a18f-33aa8801e5b2")
+		)
+		(pin "28"
+			(uuid "a2986abc-f076-41da-ae53-9446382b36c9")
+		)
+		(pin "5"
+			(uuid "2a54de81-f85e-43a2-b121-e11d5b707aca")
+		)
+		(pin "38"
+			(uuid "f5006e42-15ed-4cf4-891d-33a68495bee8")
+		)
+		(pin "25"
+			(uuid "44890a1e-df75-4d90-ada6-520ddeb8339b")
+		)
+		(pin "6"
+			(uuid "3b4632cc-8f34-49fa-a82f-dfd27d0b7c96")
+		)
+		(pin "12"
+			(uuid "a5a1ad3f-113f-4def-8737-28c9edfc651f")
+		)
+		(pin "37"
+			(uuid "74d5f432-1a20-4005-8e9a-2388ba276cfe")
+		)
+		(pin "16"
+			(uuid "587a7bb7-bb4f-4331-8d3b-85c38bbb6f2a")
+		)
+		(pin "8"
+			(uuid "2125b0dc-00c9-469d-8828-4e436ed085b6")
+		)
+		(pin "3"
+			(uuid "5cb96221-9bc1-43fd-afa0-381b90bd8337")
+		)
+		(pin "9"
+			(uuid "388a3ef9-a1ac-4bb2-9b13-2a682332b28c")
+		)
+		(pin "33"
+			(uuid "95ddc7ec-9cdd-48de-89b0-82712db5eb59")
+		)
+		(pin "36"
+			(uuid "4af84fb0-f52e-41a0-ac19-b9fc828aef0a")
+		)
+		(pin "22"
+			(uuid "ed8d3547-a592-4356-b3ff-72c12166566f")
+		)
+		(instances
+			(project ""
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 58.42 170.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aa8a81ab-587f-4808-b5c9-deef8c5c9b55")
+		(property "Reference" "#PWR024"
+			(at 58.42 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 58.42 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 58.42 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2735b490-b605-466f-a7e1-244ac8b8049b")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_C-10n")
+		(at 111.76 162.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ab17567a-d7d6-4b34-a790-17669588cbde")
+		(property "Reference" "C11"
+			(at 113.284 161.544 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10nF"
+			(at 113.284 163.322 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_CeramicCap_5.08mm"
+			(at 111.76 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10nF Ceramic Capacitor (generic)"
+			(at 111.76 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.07"
+			(at 111.76 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "TS170R1H103MSBFB0R"
+			(at 111.76 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Suntan"
+			(at 111.76 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4ab91ef7-4f68-4726-9a70-d6a66bd33c1b")
+		)
+		(pin "2"
+			(uuid "f38d0d24-cfa1-48df-929e-820352a914ca")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 111.76 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ad6b331d-c7f6-4f1b-9538-a8e61b15e707")
+		(property "Reference" "#PWR025"
+			(at 111.76 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 111.76 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 111.76 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f10b404c-caa6-404e-b051-704fd7605d7b")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_R-1M")
+		(at 48.26 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b9f09e6d-0f86-4d7a-86c1-69e7317cc092")
+		(property "Reference" "R25"
+			(at 44.45 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1MΩ"
+			(at 46.228 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_Res"
+			(at 48.26 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MΩ Through Hole Resistor (Generic)"
+			(at 48.26 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.03"
+			(at 48.26 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF0W4FF1004"
+			(at 48.26 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Royal Ohm"
+			(at 48.26 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "69e9bd6e-7043-408d-a62a-02efe0bdf10e")
+		)
+		(pin "1"
+			(uuid "70b5345c-b2f8-4b53-96ea-ad97a63bde02")
+		)
+		(instances
+			(project ""
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_R-1M")
+		(at 124.46 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c08b9cc9-0587-4e08-be5a-670079386c1a")
+		(property "Reference" "R37"
+			(at 120.65 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1MΩ"
+			(at 122.428 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_Res"
+			(at 124.46 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MΩ Through Hole Resistor (Generic)"
+			(at 124.46 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.03"
+			(at 124.46 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF0W4FF1004"
+			(at 124.46 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Royal Ohm"
+			(at 124.46 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0cecd72d-54a9-4ee4-b82e-d46073e441f7")
+		)
+		(pin "1"
+			(uuid "2d461abb-1b39-49e5-a7a5-abcd107c418b")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "R37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 48.26 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cb71270b-9c59-4ae6-a4f9-08fc0791df08")
+		(property "Reference" "#PWR026"
+			(at 48.26 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 48.26 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 48.26 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "95d0cf4d-a43c-4262-9af3-32eb291648a3")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_R-1M")
+		(at 80.01 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d8f1a16a-e031-4bc3-a160-30020c352761")
+		(property "Reference" "R30"
+			(at 76.2 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1MΩ"
+			(at 77.978 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_Res"
+			(at 80.01 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MΩ Through Hole Resistor (Generic)"
+			(at 80.01 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.03"
+			(at 80.01 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF0W4FF1004"
+			(at 80.01 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Royal Ohm"
+			(at 80.01 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "02c795ee-2b71-42af-9902-da1737cf07ba")
+		)
+		(pin "1"
+			(uuid "8d204cb5-fb2a-46fa-9842-d5373604363b")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 102.87 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e6256e19-ad47-417f-a6f6-77d736791377")
+		(property "Reference" "#PWR023"
+			(at 102.87 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 102.87 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 102.87 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "131e9c17-d314-4854-bf3f-b843296b0e65")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_LED_RED_5mm")
+		(at 267.97 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eb008309-d803-414f-8446-44c597f9942a")
+		(property "Reference" "D11"
+			(at 267.97 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Red"
+			(at 267.97 83.82 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_LED_D5.0mm"
+			(at 267.97 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 267.97 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Red LED, 5mm, 2.1V, 20mA"
+			(at 267.97 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.034"
+			(at 267.97 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "1573708"
+			(at 267.97 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TruComponents"
+			(at 267.97 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "K"
+			(uuid "9042ecd8-c3fc-416d-b145-37026befb163")
+		)
+		(pin "A"
+			(uuid "d286a193-cae4-4540-8bce-f8b33ec78097")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_R-1M")
+		(at 130.81 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ec40864f-1742-4f20-818f-0fe582367050")
+		(property "Reference" "R38"
+			(at 127 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1MΩ"
+			(at 128.778 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_Res"
+			(at 130.81 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MΩ Through Hole Resistor (Generic)"
+			(at 130.81 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.03"
+			(at 130.81 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF0W4FF1004"
+			(at 130.81 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Royal Ohm"
+			(at 130.81 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "386e4ad3-c7d9-4a5f-8f25-e4ff82e9bafe")
+		)
+		(pin "1"
+			(uuid "7b8139e8-8cfa-4e79-b58a-4b71c8f22a51")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "R38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_R-1M")
+		(at 105.41 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f2c7a3a2-d22e-4425-bb75-6d714ae90416")
+		(property "Reference" "R34"
+			(at 101.6 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1MΩ"
+			(at 103.378 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_Res"
+			(at 105.41 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1MΩ Through Hole Resistor (Generic)"
+			(at 105.41 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.03"
+			(at 105.41 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF0W4FF1004"
+			(at 105.41 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Royal Ohm"
+			(at 105.41 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6ce0f247-4d43-4c6d-8897-93c8ba37a0e3")
+		)
+		(pin "1"
+			(uuid "e23a63c3-78d4-4d23-86a7-edc0419bbc44")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "R34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 204.47 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fe9d3b19-cfcb-4ac5-b80c-6dea8eb32be0")
+		(property "Reference" "#PWR034"
+			(at 204.47 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 204.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 204.47 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "39c21987-a44b-42ee-b398-551c4daae836")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_C-10n")
+		(at 58.42 162.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff46cd20-8c0f-44e8-b4b9-e8c27db5f1d8")
+		(property "Reference" "C12"
+			(at 59.944 161.544 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10nF"
+			(at 59.944 163.322 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_CeramicCap_5.08mm"
+			(at 58.42 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10nF Ceramic Capacitor (generic)"
+			(at 58.42 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.07"
+			(at 58.42 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "TS170R1H103MSBFB0R"
+			(at 58.42 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Suntan"
+			(at 58.42 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e2fa912f-81b9-4501-9cde-f206be078e03")
+		)
+		(pin "2"
+			(uuid "aab7546f-86ca-4997-9782-eb203e53db39")
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 251.46 217.17)
+		(size 33.02 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4576f5ad-6b83-487b-bf12-b470c4d9d8e7")
+		(property "Sheetname" "Filters"
+			(at 251.46 216.4584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "filters.kicad_sch"
+			(at 251.46 232.9946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "synth-v1"
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
