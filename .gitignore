@@ -18,6 +18,7 @@ _autosave-*
 fp-info-cache
 *#
 *.lck
+*.backup
 
 # Netlist files (exported from Eeschema)
 *.net
@@ -36,3 +37,4 @@ fp-info-cache
 *.fls
 *.log
 *.pdf
+
