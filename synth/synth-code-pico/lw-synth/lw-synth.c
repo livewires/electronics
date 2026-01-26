@@ -2,6 +2,7 @@
  * Copyright (c) 2020 Raspberry Pi (Trading) Ltd.
  *
  * SPDX-License-Identifier: BSD-3-Clause
+ *
  */
 
 // Fade an LED between low and high brightness. An interrupt handler updates
@@ -15,6 +16,69 @@
 #include "hardware/dma.h"
 #include "sine_table.h"
 
+/********************************************************
+ * System configuration
+ ********************************************************/
+
+
+/********************************************************
+ * Pin defines
+ ********************************************************/
+
+ #define WAVE_PIN 28
+ #define NOTE_ON_PIN 27
+
+ #define CAP_PIN 22
+
+ /* LEDs are pins 3 to 7 */
+ #define LEDS_ALL (0x000000F8)
+
+ /* Explain the below */
+
+ #define CAP_PINS_30us ( \
+     (0x1 << 10) | \
+     (0x1 << 12) | \
+     (0x1 << 16) | \
+     (0x1 << 18) | \
+     (0x1 << 15) | \
+     (0x1 << 14))
+
+ #define CAP_PINS_40us ( \
+     (0x1 << 20))
+
+ #define CAP_PINS_50us ( \
+     (0x1 << 19) | \
+     (0x1 << 17) | \
+     (0x1 << 11))
+
+ #define CAP_PINS_60us ( \
+     (0x1 << 13) | \
+     (0x1 <<  9) | \
+     (0x1 << 21) | \
+     (0x1 <<  8))
+
+ #define CAP_PINS_70us ( \
+     (0x1 << 22))
+
+ #define CAP_PINS_ALL (CAP_PINS_30us | CAP_PINS_40us | CAP_PINS_50us | CAP_PINS_60us | CAP_PINS_70us)
+
+ #define OCTAVE_UP (1u << 14)
+ #define OCTAVE_DN (1u << 13)
+
+
+ /********************************************************
+  * Macros
+  ********************************************************/
+
+#define NOTE_ON() gpio_put(NOTE_ON_PIN, 0)
+#define NOTE_OFF() gpio_put(NOTE_ON_PIN, 1)
+
+
+/********************************************************
+ * Constants and peripherals
+ ********************************************************/
+
+/* Library of note frequencies - quicker than calculating them each time! */
 float note_freqs[] = {
     // C1 to B1
     32.703, 34.648, 36.708, 38.891, 41.203, 43.654, 46.249, 48.999, 51.913, 55.000, 58.270, 61.735,
@@ -30,77 +94,54 @@ float note_freqs[] = {
     1046.502
 };
 
-
-static int current_octave = 2;
-
-static float glide_factor = 1.0f;
-
-
-int dma_chan;
+/* PWM peripheral */
 uint pwm_slice_num;
 
 
+/********************************************************
+ * System state variables
+ ********************************************************/
+
+/* The single C-to-C octave on the keyboard is currently representing which octave? */
+static int current_octave = 2;
+
+/* How quickly should the target note be reached? 1.0 means change instantly (i.e. no glide),
+ * smaller fractions will increase the glide time. The actual glide time is a function of
+ * glide_factor and the cycle time. */
+static float glide_factor = 1.0f;
+
+/* We calculate the next sample's value by tracking the phase on the output wave. Each time we need
+ * a new sample, the phase is increased by sample_time/frequency. This is scaled so that we can
+ * do all the calculations in integer maths.
+ */
 uint32_t phase_increment_per_sample;
 
-#define WAVE_PIN 28
-#define NOTE_ON_PIN 27
 
-#define CAP_PIN 22
+/********************************************************
+ * Helper functions
+ ********************************************************/
 
-/* LEDs are pins 3 to 7 */
-#define LEDS_ALL (0x000000F8)
-
-#define CAP_PINS_30us ( \
-    (0x1 << 10) | \
-    (0x1 << 12) | \
-    (0x1 << 16) | \
-    (0x1 << 18) | \
-    (0x1 << 15) | \
-    (0x1 << 14))
-
-#define CAP_PINS_40us ( \
-    (0x1 << 20))
-
-#define CAP_PINS_50us ( \
-    (0x1 << 19) | \
-    (0x1 << 17) | \
-    (0x1 << 11))
-
-#define CAP_PINS_60us ( \
-    (0x1 << 13) | \
-    (0x1 <<  9) | \
-    (0x1 << 21) | \
-    (0x1 <<  8))
-
-#define CAP_PINS_70us ( \
-    (0x1 << 22))
-
-#define CAP_PINS_ALL (CAP_PINS_30us | CAP_PINS_40us | CAP_PINS_50us | CAP_PINS_60us | CAP_PINS_70us)
-
-#define OCTAVE_UP (1u << 14)
-#define OCTAVE_DN (1u << 13)
-
-
-#define NOTE_ON() gpio_put(NOTE_ON_PIN, 0)
-#define NOTE_OFF() gpio_put(NOTE_ON_PIN, 1)
-
-uint16_t samples[2048];
-
-
-
+/* Returns the index of the most significant high bit. -1 if no bits are high */
 int msb_index(uint32_t x) {
-    if (x == 0) return -1; // no bits set
+    if (x == 0) {
+        // no bits set
+        return -1;
+    }
 
     int index = 0;
-    while (x >>= 1) { // shift right until x == 0
+    // shift right until x == 0
+    while (x >>= 1) {
         index++;
     }
     return index;
 }
 
 
+/********************************************************
+ * LED pins
+ ********************************************************/
 
-/** Set up the LED outputs */
+/* Set up the LED outputs */
 void leds_init() {
     gpio_init_mask(LEDS_ALL);
     gpio_set_dir_out_masked(LEDS_ALL);
@@ -114,6 +155,12 @@ void leds_set(uint8_t s) {
     gpio_put_masked(LEDS_ALL, values);
 }
 
+
+/********************************************************
+ * Capacitive touch buttons
+ ********************************************************/
+
+/* Initialise capacitive touch button inputs */
 void buttons_init() {
     // Initialize all CAP pins
     gpio_init_mask(CAP_PINS_ALL);
@@ -135,12 +182,19 @@ void buttons_init() {
     gpio_set_dir_in_masked(CAP_PINS_ALL);
 }
 
+/* Read the state of all the capacitive touch buttons. Each bit is high if the button is pressed.
+ *
+ * Bit 0 is low C, bit 1 is C# etc. Bit 13 is Octave Down button, bit 14 is Octave Up button */
 uint32_t buttons_read() {
     uint32_t buttons = 0;
 
-
+    // Set all the pins as outputs. Should already be set to high by buttons_init().
     gpio_set_dir_out_masked(CAP_PINS_ALL);
     sleep_us(10);
+    /* Set all pins back to input, i.e. high impedance. They each have a 1M resistor to ground, so
+     * the fall time of the pin will change as the capacitance on the pin changes. Because each pin
+     * has a different track length and shape, the threshold for a pin being touched varies by pin,
+     * hence checking different pins at different times. */
     gpio_set_dir_in_masked(CAP_PINS_ALL);
     sleep_us(30);
     buttons |= ~gpio_get_all() & CAP_PINS_30us;
@@ -153,7 +207,8 @@ uint32_t buttons_read() {
     sleep_us(10);
     buttons |= ~gpio_get_all() & CAP_PINS_70us;
 
-    // Map input values (raw pin numbers) to sensible order
+    /* Map input values (raw pin numbers) to sensible order */
+
     buttons = ~buttons;
     uint32_t out = 0;
 
@@ -175,23 +230,22 @@ uint32_t buttons_read() {
 }
 
 
-void dma_irh() {
-    dma_hw->ch[dma_chan].al1_read_addr = (uint32_t) sineLookupTable;
-    dma_hw->ints0 = (0x1 << dma_chan);
-    dma_channel_start(dma_chan);
-}
+/********************************************************
+ * PWM wave output
+ ********************************************************/
 
-void set_freq(float freq) {
+/* Sets the frequency of the output wave */
+void wave_set_freq(float freq) {
     /* times by 128 for added precision when cast to integer */
     uint64_t fp = (uint32_t) (freq * 128);
     /* times by 512 for number of samples in sine table */
     phase_increment_per_sample = (fp << 9) / 40690;
 }
 
+/* This function runs each time the PWM cycle goes round, i.e. it runs on every single sample, so
+ * it needs to be as light as possible. */
 void on_pwm_wrap() {
-    static uint32_t sample_num = 0;
     static uint64_t phase = 0;
-    sample_num += 1;
 
     // Clear the interrupt flag that brought us here
     pwm_clear_irq(pwm_slice_num);
@@ -201,17 +255,54 @@ void on_pwm_wrap() {
     pwm_set_chan_level(pwm_slice_num, PWM_CHAN_A, sineLookupTable[(phase >> 7) & 0x1FF]);
 }
 
+/* Initialise the wave output pins etc. */
+void wave_init(void) {
+    gpio_set_function(WAVE_PIN, GPIO_FUNC_PWM);
+    gpio_init(NOTE_ON_PIN);
+    gpio_set_dir(NOTE_ON_PIN, GPIO_OUT);
+    gpio_put(NOTE_ON_PIN, 1);
+
+    wave_set_freq(440);
+
+    pwm_slice_num = pwm_gpio_to_slice_num(WAVE_PIN);
+    pwm_clear_irq(pwm_slice_num);
+    pwm_set_irq_enabled(pwm_slice_num, true);
+    irq_set_exclusive_handler(PWM_DEFAULT_IRQ_NUM(), on_pwm_wrap);
+    irq_set_enabled(PWM_DEFAULT_IRQ_NUM(), true);
+
+    /* Set up PWM peripheral for the following:
+     *   - Duty cycle of ~25µs (~40kHz) which effectively becomes system's sampling freq
+     *   - Output resolution of 1024, must match resolution of sine table
+     */
+
+    // Get some sensible defaults for the slice configuration. By default, the
+    // counter is allowed to wrap over its maximum range (0 to 2**16-1)
+    pwm_config config = pwm_get_default_config();
+    // Set divider, reduces counter clock to sysclock/this value
+    // Divide 125MHz by 3 and you get 41.6MHz
+    pwm_config_set_clkdiv(&config, 3.f);
+    // Load the configuration into our PWM slice, and set it running.
+    // 41.6MHz / 1024 = 40.7kHz effective sample rate
+    pwm_config_set_wrap(&config, 1023);
+    pwm_init(pwm_slice_num, &config, true);
+}
+
+
+/********************************************************
+ * Business logic
+ ********************************************************/
+
 void process_octave_buttons(uint32_t inputs, uint32_t time_now_ms) {
     static uint32_t last_time_event_occurred = -50;
     static uint32_t last_button_state = 0;
 
-    /* Handle octave button */
+    /* Extract octave buttons and look for rising edges */
     uint32_t button_state = inputs & 0x6000;
     uint32_t rising_edges = button_state & ~last_button_state;
     // update for next loop
     last_button_state = button_state;
 
-    /* Don't take any action if we took an action in the last 50ms */
+    /* Don't take any action if we took an action in the last 50ms - crude debouncing */
     if (time_now_ms - last_time_event_occurred < 50) {
         return;
     }
@@ -236,54 +327,22 @@ void process_octave_buttons(uint32_t inputs, uint32_t time_now_ms) {
 }
 
 int main() {
-
     leds_init();
-
     buttons_init();
-
-    gpio_set_function(WAVE_PIN, GPIO_FUNC_PWM);
-    gpio_init(NOTE_ON_PIN);
-    gpio_set_dir(NOTE_ON_PIN, GPIO_OUT);
-    gpio_put(NOTE_ON_PIN, 1);
-
-    set_freq(100);
-
-
-    pwm_slice_num = pwm_gpio_to_slice_num(WAVE_PIN);
-
-    pwm_clear_irq(pwm_slice_num);
-    pwm_set_irq_enabled(pwm_slice_num, true);
-    irq_set_exclusive_handler(PWM_DEFAULT_IRQ_NUM(), on_pwm_wrap);
-    irq_set_enabled(PWM_DEFAULT_IRQ_NUM(), true);
-
-    // Get some sensible defaults for the slice configuration. By default, the
-    // counter is allowed to wrap over its maximum range (0 to 2**16-1)
-    pwm_config config = pwm_get_default_config();
-    // Set divider, reduces counter clock to sysclock/this value
-    // Divide 125MHz by 3 and you get 41.6MHz
-    pwm_config_set_clkdiv(&config, 3.f);
-    // Load the configuration into our PWM slice, and set it running.
-    // 41.6MHz / 1024 = 40.7kHz effective sample rate
-    pwm_config_set_wrap(&config, 1023);
-    // Uncomment this to start GPIO working again
-    pwm_init(pwm_slice_num, &config, true);
+    wave_init();
 
     uint32_t time_ctr = 0;
 
     float target_freq = 0;
     float current_freq = 0;
 
-
     while (1) {
-
         uint32_t ins = buttons_read();
         int note_index = msb_index(ins & 0x1FFF);
 
         /* If both octave buttons are pressed, we're in glide factor mode */
         if ((ins &  (OCTAVE_UP | OCTAVE_DN)) == (OCTAVE_UP | OCTAVE_DN)) {
             NOTE_OFF();
-
-
 
             /* If a note is being pressed, change the glide factor. Otherwise, do nothing */
             /* LEDs are all on if no key is pressed, otherwise, turn them all off */
@@ -294,6 +353,7 @@ int main() {
                 leds_set(0x1F);
             }
         } else {
+            /* Normal note mode. Process octave buttons, then process main keyboard keys */
             process_octave_buttons(ins, time_ctr);
 
             leds_set(0x1 << current_octave);
@@ -308,7 +368,7 @@ int main() {
 
             current_freq += (target_freq - current_freq) * glide_factor;
 
-            set_freq(current_freq);
+            wave_set_freq(current_freq);
         }
 
         sleep_ms(1);
