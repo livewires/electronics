@@ -6007,7 +6007,7 @@
 	)
 	(global_label "WAVE_OUT"
 		(shape output)
-		(at 114.3 172.72 0)
+		(at 115.57 172.72 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6017,7 +6017,7 @@
 		)
 		(uuid "b0c99459-3e55-4417-9c2f-c71e49c23524")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 126.659 172.72 0)
+			(at 127.929 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6175,6 +6175,100 @@
 			(project "synth-v1"
 				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f/4576f5ad-6b83-487b-bf12-b470c4d9d8e7"
 					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LiveWires:LW_R-100K")
+		(at 38.1 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "03713c51-d2f7-4ac7-b353-6fe0c691c05f")
+		(property "Reference" "R14"
+			(at 38.1 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100kΩ"
+			(at 38.1 108.458 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_Res"
+			(at 38.1 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100kΩ Through Hole Resistor (Generic)"
+			(at 38.1 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.03"
+			(at 38.1 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF0W4FF1003"
+			(at 38.1 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Royal Ohm"
+			(at 38.1 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a9cfb46c-6000-42a1-98df-58fe53d26f11")
+		)
+		(pin "1"
+			(uuid "d7607e46-8391-46b8-a2b0-7365d8b8ca7c")
+		)
+		(instances
+			(project ""
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f/4576f5ad-6b83-487b-bf12-b470c4d9d8e7"
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -9740,102 +9834,6 @@
 	)
 	(symbol
 		(lib_id "LiveWires:LW_R-10K")
-		(at 43.18 115.57 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "70a9f55e-32c9-427c-89d4-8876c9e416b4")
-		(property "Reference" "R15"
-			(at 44.704 114.554 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10kΩ"
-			(at 44.704 116.332 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LiveWires:LW_Res"
-			(at 43.18 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 43.18 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10kΩ Through Hole Resistor (Generic)"
-			(at 43.18 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Cost" "0.03"
-			(at 43.18 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "MF0W4FF1002"
-			(at 43.18 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Royal Ohm"
-			(at 43.18 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ce5452d8-9b5c-4515-a853-ec9fbc3f6c32")
-		)
-		(pin "2"
-			(uuid "6eb803b1-203e-49cd-9d43-06d996909a91")
-		)
-		(instances
-			(project "synth-v1"
-				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f/4576f5ad-6b83-487b-bf12-b470c4d9d8e7"
-					(reference "R15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LiveWires:LW_R-10K")
 		(at 115.57 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11479,6 +11477,102 @@
 		)
 	)
 	(symbol
+		(lib_id "LiveWires:LW_R-100K")
+		(at 43.18 115.57 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b3af9b20-3425-43e6-94b1-0d3e244c6311")
+		(property "Reference" "R15"
+			(at 44.704 114.554 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100kΩ"
+			(at 44.704 116.332 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LiveWires:LW_Res"
+			(at 43.18 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100kΩ Through Hole Resistor (Generic)"
+			(at 43.18 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.03"
+			(at 43.18 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MF0W4FF1003"
+			(at 43.18 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Royal Ohm"
+			(at 43.18 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a9cfb46c-6000-42a1-98df-58fe53d26f11")
+		)
+		(pin "1"
+			(uuid "d7607e46-8391-46b8-a2b0-7365d8b8ca7c")
+		)
+		(instances
+			(project ""
+				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f/4576f5ad-6b83-487b-bf12-b470c4d9d8e7"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LiveWires:LW_R-1K")
 		(at 107.95 132.08 0)
 		(unit 1)
@@ -12724,100 +12818,6 @@
 			(project "synth-v1"
 				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f/4576f5ad-6b83-487b-bf12-b470c4d9d8e7"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LiveWires:LW_R-10K")
-		(at 38.1 110.49 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e192b473-26a7-4684-8e18-2902989cb10b")
-		(property "Reference" "R14"
-			(at 38.1 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10kΩ"
-			(at 38.1 108.458 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LiveWires:LW_Res"
-			(at 38.1 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10kΩ Through Hole Resistor (Generic)"
-			(at 38.1 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Cost" "0.03"
-			(at 38.1 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "MF0W4FF1002"
-			(at 38.1 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Royal Ohm"
-			(at 38.1 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8ababa3a-4bd7-47a6-a09c-35ca9d6f5221")
-		)
-		(pin "2"
-			(uuid "156f1037-b6a0-47a4-91ec-78d2a0c8ee1a")
-		)
-		(instances
-			(project "synth-v1"
-				(path "/e4b14e5f-7937-4e93-a8ca-bc52b5b8338f/4576f5ad-6b83-487b-bf12-b470c4d9d8e7"
-					(reference "R14")
 					(unit 1)
 				)
 			)
