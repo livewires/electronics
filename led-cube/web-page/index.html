@@ -423,22 +423,16 @@
     <!-- ── Help modal ────────────────────────────────────────── -->
     <div id="help-overlay" onclick="closeHelpOnOverlay(event)">
         <div id="help-box">
-            <h2>Deploying to the Raspberry Pi Pico</h2>
+            <h2>Deploying to the LED Cube</h2>
             <p>
-                Download <code>animations.json</code> using the button in the sidebar.
+                Plug the LED cube in to the computer
             </p>
             <p>
-                Plug the Pico into your computer via USB while holding the
-                <strong>BOOTSEL</strong> button. It will appear as a removable
-                storage drive.
+                Download <code>animations.json</code> to the <code>CIRCUITPY</code> drive 
+                that appears.
             </p>
             <p>
-                Copy <code>animations.json</code> into the <strong>main directory</strong>
-                of the drive, next to <code>main.py</code>.
-            </p>
-            <p>
-                Eject the drive safely, then unplug and replug the Pico (without
-                BOOTSEL) to run the new animations.
+                Eject the drive safely, then unplug and replug the cube to run the new animations.
             </p>
             <button class="close-btn" onclick="closeHelp()">Close</button>
         </div>
@@ -890,19 +884,36 @@ function reverseBits27(v) {
     return r >>> 0;
 }
 
-function downloadJSON() {
+async function downloadJSON() {
     const data = animations.map(a => ({
         name:      a.name,
         frames:    a.frames.map(f => reverseBits27(f)),
         framerate: a.framerate
     }));
-    const blob = new Blob([JSON.stringify(data, null, 4)], { type: 'application/json' });
-    const url  = URL.createObjectURL(blob);
-    const a    = Object.assign(document.createElement('a'), { href: url, download: 'animations.json' });
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+    const json = JSON.stringify(data, null, 4);
+
+    if (window.showSaveFilePicker) {
+        try {
+            const handle = await window.showSaveFilePicker({
+                suggestedName: 'animations.json',
+                types: [{ description: 'JSON', accept: { 'application/json': ['.json'] } }],
+            });
+            const writable = await handle.createWritable();
+            await writable.write(json);
+            await writable.close();
+        } catch (e) {
+            if (e.name !== 'AbortError') throw e;
+        }
+    } else {
+        // Fallback for Firefox / Safari
+        const blob = new Blob([json], { type: 'application/json' });
+        const url  = URL.createObjectURL(blob);
+        const a    = Object.assign(document.createElement('a'), { href: url, download: 'animations.json' });
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
 }
 
 function copyJSON(btn) {

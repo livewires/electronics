@@ -93,7 +93,7 @@ DEBOUNCE_S = 0.2
 try:
     with open("animations.json", "r") as f:
         animations = json.load(f)
-except OSError:
+except (OSError, ValueError):
     animations = [
         {
             "name": "push through each direction",
