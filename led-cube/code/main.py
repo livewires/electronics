@@ -1,5 +1,6 @@
 from machine import Pin
 import time
+import json
 
 
 class AnimPlayer:
@@ -47,11 +48,11 @@ class AnimPlayer:
 def btn_press(ev):
     global next_anim, last_press_ms
     now = time.ticks_ms()
-    if ev.value() == 0:  # Falling edge — button pressed
-        if time.ticks_diff(now, last_press_ms) > DEBOUNCE_MS:
-            next_anim = True
-    else:  # Rising edge — button released
-        last_press_ms = now
+    if time.ticks_diff(now, last_press_ms) < DEBOUNCE_MS:
+        return  # Ignore anything too soon, rising or falling
+    last_press_ms = now
+    if ev.value() == 0:  # Only act on falling edge
+        next_anim = True
         
 
 def light_one_by_one(delay):
@@ -119,7 +120,7 @@ frames = [0x00001FF, 0x003FFFF, 0x7FFFFFF, 0x7FFFFFF, 0x7FFFFFF, 0x7FFFFFF, 0x7F
           0x70381C0, 0x7E3F1F8, 0x7FFFFFF, 0x7FFFFFF, 0x7FFFFFF, 0x7FFFFFF, 0x0FC7E3F, 0x01C0E07, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 
           0x4924924, 0x6DB6DB6, 0x7FFFFFF, 0x7FFFFFF, 0x7FFFFFF, 0x7FFFFFF, 0x36DB6DB, 0x1249249, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ]
 
-animations = [
+animations2 = [
     {
         "name": "push through each direction",
         "frames": [0x00001FF, 0x003FFFF, 0x7FFFFFF, 0x7FFFFFF, 0x7FFFFFF, 0x7FFFFFF, 0x7FFFE00, 0x7FC0000, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 
@@ -140,6 +141,57 @@ animations = [
     
 ]
 
+animations3 = [
+    {
+        "name": "Test 1",
+        "frames": [
+            261632,
+            511,
+            133955584
+        ],
+        "framerate": 3
+    },
+    {
+        "name": "Test 2",
+        "frames": [
+            38347922,
+            76695844,
+            19173961
+        ],
+        "framerate": 2
+    }
+]
+
+
+# Load JSON animations
+try:
+    with open("animations.json", "r") as f:
+        animations = json.load(f)
+except:
+    animations = [
+        {
+            "name": "push through each direction",
+            "frames": [0x00001FF, 0x003FFFF, 0x7FFFFFF, 0x7FFFFFF, 0x7FFFFFF, 0x7FFFFFF, 0x7FFFE00, 0x7FC0000, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 
+                      0x70381C0, 0x7E3F1F8, 0x7FFFFFF, 0x7FFFFFF, 0x7FFFFFF, 0x7FFFFFF, 0x0FC7E3F, 0x01C0E07, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 
+                      0x4924924, 0x6DB6DB6, 0x7FFFFFF, 0x7FFFFFF, 0x7FFFFFF, 0x7FFFFFF, 0x36DB6DB, 0x1249249, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0],
+            "framerate": 15
+        },
+        {
+            "name": "every-other",
+            "frames": [0xAAAAAAA, 0x5555555],
+            "framerate": 2,
+        },
+        {
+            "name": "spinning-around",
+            "frames": [0x2492492, 0x150A854, 0x0E07038, 0x4462311],
+            "framerate": 8,
+        },
+        
+    ]
+    
+with open("animations.json", "r") as f:
+    animations = json.load(f)
+
 
 global next_anim, last_press_ms
 next_anim = False
@@ -147,10 +199,11 @@ last_press_ms = 0
 
 # Set up animator
 player = AnimPlayer(anodes, cathodes)
-player.load_frames(frames)
-player.set_framerate(10)
 
 animation_index = 0
+
+player.load_frames(animations[animation_index]["frames"])
+player.set_framerate(animations[animation_index]["framerate"])
 
 while True:
     player.run_cycle()
