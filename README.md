@@ -18,6 +18,11 @@ This is the LiveWires analogue synthesiser, a musical instrument with 5 octaves 
 
 [Click here to find out more](synth/README.md)
 
+## 3D LED Cube
+
+The LiveWires LED cube, a 3x3x3 grid of LEDs with custom animations. 
+
+[Click here to find out more](led-cube/README.md)
 
 ## Release Process
 

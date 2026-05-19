@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED Cube Animator</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: #0d1117;
+            color: #c9d1d9;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* ── Page header ─────────────────────────────────────────── */
+
+        #page-header {
+            background: #161b22;
+            border-bottom: 1px solid #30363d;
+            padding: 8px 14px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+
+        #lw-logo {
+            height: 26px;
+            width: auto;
+        }
+
+        #header-divider {
+            width: 1px;
+            height: 20px;
+            background: #30363d;
+        }
+
+        #page-title {
+            font-size: 13px;
+            color: #8b949e;
+            letter-spacing: 0.5px;
+        }
+
+        #header-github {
+            margin-left: auto;
+            font-size: 12px;
+            color: #8b949e;
+            text-decoration: none;
+        }
+
+        #header-github:hover { color: #58a6ff; }
+
+        #app {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        /* ── Sidebar ─────────────────────────────────────────────── */
+
+        #sidebar {
+            width: 180px;
+            min-width: 180px;
+            background: #161b22;
+            border-right: 1px solid #30363d;
+            display: flex;
+            flex-direction: column;
+            padding: 12px 8px;
+            gap: 8px;
+        }
+
+        .section-title {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #8b949e;
+            padding: 0 4px;
+        }
+
+        #animation-list {
+            flex: 1;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .animation-item {
+            padding: 7px 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+            color: #c9d1d9;
+            border: 1px solid transparent;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .animation-item:hover { background: #21262d; }
+
+        .animation-item.active {
+            background: #1f6feb22;
+            border-color: #1f6feb;
+            color: #58a6ff;
+        }
+
+        hr.divider {
+            border: none;
+            border-top: 1px solid #30363d;
+        }
+
+        .btn-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px;
+        }
+
+        /* ── Shared button styles ────────────────────────────────── */
+
+        button, .file-btn {
+            background: #21262d;
+            color: #c9d1d9;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 5px 8px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 12px;
+            transition: background 0.1s, border-color 0.1s;
+            display: inline-block;
+            text-align: center;
+        }
+
+        button:hover, .file-btn:hover {
+            background: #30363d;
+            border-color: #58a6ff;
+        }
+
+        button.danger:hover {
+            background: #2d1515;
+            border-color: #f85149;
+            color: #f85149;
+        }
+
+        button.primary {
+            background: #1f6feb;
+            border-color: #1f6feb;
+            color: #fff;
+        }
+
+        button.primary:hover { background: #388bfd; }
+
+        /* ── Main area ───────────────────────────────────────────── */
+
+        #main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        #controls-bar {
+            background: #161b22;
+            border-bottom: 1px solid #30363d;
+            padding: 8px 14px;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            flex-shrink: 0;
+        }
+
+        .ctrl-group {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .ctrl-group label {
+            font-size: 11px;
+            color: #8b949e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        input[type="text"], input[type="number"] {
+            background: #0d1117;
+            color: #c9d1d9;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 4px 8px;
+            font-family: inherit;
+            font-size: 13px;
+            outline: none;
+        }
+
+        input:focus { border-color: #58a6ff; }
+        input[type="number"] { width: 58px; }
+        input[type="text"]   { width: 210px; }
+
+        /* ── SVG display ─────────────────────────────────────────── */
+
+        #svg-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            overflow: hidden;
+        }
+
+        #svg-container svg {
+            width: auto;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        /* ── Group-toggle bar ───────────────────────────────────── */
+
+        #group-bar {
+            background: #0d1117;
+            border-top: 1px solid #21262d;
+            padding: 6px 10px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+            flex-wrap: wrap;
+        }
+
+        .group-set {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .group-set-label {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #8b949e;
+            min-width: 38px;
+        }
+
+        .group-divider {
+            width: 1px;
+            height: 22px;
+            background: #30363d;
+        }
+
+        /* ── Timeline ────────────────────────────────────────────── */
+
+        #timeline {
+            background: #161b22;
+            border-top: 1px solid #30363d;
+            flex-shrink: 0;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        #timeline-controls {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        #timeline-controls .spacer { flex: 1; }
+
+        #frames-strip {
+            display: flex;
+            gap: 3px;
+            overflow-x: auto;
+            padding-bottom: 2px;
+        }
+
+        #frames-strip::-webkit-scrollbar { height: 4px; }
+        #frames-strip::-webkit-scrollbar-track { background: #0d1117; }
+        #frames-strip::-webkit-scrollbar-thumb { background: #30363d; border-radius: 2px; }
+
+        .frame-box {
+            min-width: 54px;
+            border: 1px solid #30363d;
+            border-radius: 4px;
+            cursor: pointer;
+            padding: 4px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+            background: #0d1117;
+            flex-shrink: 0;
+            transition: border-color 0.1s;
+        }
+
+        .frame-box:hover { border-color: #58a6ff; }
+
+        .frame-box.active {
+            border-color: #f85149;
+            background: #1a0000;
+        }
+
+        .frame-box.dragging { opacity: 0.35; }
+
+        .frame-box.drag-over {
+            border-color: #58a6ff;
+            border-style: dashed;
+            background: #0d2030;
+        }
+
+        .frame-num { font-size: 9px; color: #8b949e; }
+        .frame-hex { font-size: 8px; color: #6e7681; }
+
+        /* ── Help modal ─────────────────────────────────────────── */
+
+        #help-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.65);
+            z-index: 100;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #help-overlay.open { display: flex; }
+
+        #help-box {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            padding: 24px 28px;
+            max-width: 420px;
+            width: 90%;
+            color: #c9d1d9;
+            position: relative;
+        }
+
+        #help-box h2 {
+            font-size: 15px;
+            color: #58a6ff;
+            margin-bottom: 14px;
+            letter-spacing: 0.5px;
+        }
+
+        #help-box p {
+            font-size: 13px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            color: #c9d1d9;
+        }
+
+        #help-box code {
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 4px;
+            padding: 1px 5px;
+            font-family: inherit;
+            color: #79c0ff;
+        }
+
+        #help-box .close-btn {
+            margin-top: 16px;
+            width: 100%;
+        }
+
+        /* ── IO bar ──────────────────────────────────────────────── */
+
+        #io-bar {
+            background: #0d1117;
+            border-top: 1px solid #21262d;
+            padding: 6px 8px;
+            display: flex;
+            gap: 6px;
+            justify-content: flex-end;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+<header id="page-header">
+    <img src="lw-white.svg" alt="LiveWires" id="lw-logo">
+    <div id="header-divider"></div>
+    <span id="page-title">LiveWires LED Cube Animator</span>
+    <a id="header-github" href="https://github.com/livewires/electronics" target="_blank" rel="noopener">GitHub</a>
+</header>
+<div id="app">
+
+    <!-- ── Sidebar ────────────────────────────────────────────── -->
+    <div id="sidebar">
+        <div class="section-title">Animations</div>
+        <div id="animation-list"></div>
+
+        <hr class="divider">
+        <div class="btn-row">
+            <button onclick="addAnimation()">+ Add</button>
+            <button class="danger" onclick="removeAnimation()">− Del</button>
+        </div>
+        <div class="btn-row">
+            <button onclick="moveAnimation(-1)">↑ Up</button>
+            <button onclick="moveAnimation(1)">↓ Down</button>
+        </div>
+
+        <hr class="divider">
+        <button onclick="downloadJSON()">⬇ Download JSON</button>
+        <button onclick="copyJSON(this)">⧉ Copy JSON</button>
+        <label class="file-btn">
+            ⬆ Load JSON
+            <input type="file" accept=".json" style="display:none" onchange="loadJSON(event)">
+        </label>
+
+        <hr class="divider">
+        <button onclick="openHelp()">? Help</button>
+    </div>
+
+    <!-- ── Help modal ────────────────────────────────────────── -->
+    <div id="help-overlay" onclick="closeHelpOnOverlay(event)">
+        <div id="help-box">
+            <h2>Deploying to the LED Cube</h2>
+            <p>
+                Plug the LED cube in to the computer
+            </p>
+            <p>
+                Download <code>animations.json</code> to the <code>CIRCUITPY</code> drive 
+                that appears.
+            </p>
+            <p>
+                Eject the drive safely, then unplug and replug the cube to run the new animations.
+            </p>
+            <button class="close-btn" onclick="closeHelp()">Close</button>
+        </div>
+    </div>
+
+    <!-- ── Main ───────────────────────────────────────────────── -->
+    <div id="main">
+
+        <div id="controls-bar">
+            <div class="ctrl-group">
+                <label>Name</label>
+                <input type="text" id="anim-name" value="" oninput="updateAnimationName(this.value)">
+            </div>
+            <div class="ctrl-group">
+                <label>FPS</label>
+                <input type="number" id="anim-fps" value="8" min="1" max="15" oninput="updateFramerate(this.value)">
+            </div>
+        </div>
+
+        <div id="svg-container">Loading SVG…</div>
+
+        <div id="group-bar">
+            <div class="group-set">
+                <span class="group-set-label">Layer</span>
+                <button onclick="toggleGroup('layer',0)">Bottom</button>
+                <button onclick="toggleGroup('layer',1)">Middle</button>
+                <button onclick="toggleGroup('layer',2)">Top</button>
+            </div>
+            <div class="group-divider"></div>
+            <div class="group-set">
+                <span class="group-set-label">Col</span>
+                <button onclick="toggleGroup('col',0)">Left</button>
+                <button onclick="toggleGroup('col',1)">Center</button>
+                <button onclick="toggleGroup('col',2)">Right</button>
+            </div>
+            <div class="group-divider"></div>
+            <div class="group-set">
+                <span class="group-set-label">Row</span>
+                <button onclick="toggleGroup('row',0)">Back</button>
+                <button onclick="toggleGroup('row',1)">Mid</button>
+                <button onclick="toggleGroup('row',2)">Front</button>
+            </div>
+        </div>
+
+        <div id="timeline">
+            <div id="timeline-controls">
+                <button onclick="goToFirstFrame()" title="First">⏮</button>
+                <button onclick="stepFrame(-1)"    title="Prev">◀</button>
+                <button id="play-btn" class="primary" onclick="togglePlay()">▶ Play</button>
+                <button onclick="stepFrame(1)"     title="Next">▶</button>
+                <button onclick="goToLastFrame()"  title="Last">⏭</button>
+                <div class="spacer"></div>
+                <button onclick="moveFrame(-1)" title="Move frame left">← Move</button>
+                <button onclick="moveFrame(1)"  title="Move frame right">Move →</button>
+                <button onclick="addFrameAfter()">+ Frame</button>
+                <button onclick="duplicateFrame()">⧉ Dup</button>
+                <button class="danger" onclick="clearFrame()">✕ Clear</button>
+                <button class="danger" onclick="removeFrame()">− Frame</button>
+            </div>
+            <div id="frames-strip"></div>
+        </div>
+
+        <div id="io-bar">
+            <!-- Intentionally empty — IO moved to sidebar -->
+        </div>
+
+    </div>
+</div>
+
+<script>
+// ============================================================
+// State
+// ============================================================
+
+let animations    = [newAnimation('New Animation')];
+let currentAnimIdx  = 0;
+let currentFrameIdx = 0;
+let isPlaying  = false;
+let playTimer  = null;
+let dragSrcIdx = null;
+
+const ledElements = {};  // ledNumber (1-27) -> SVG path element
+
+function openHelp()  { document.getElementById('help-overlay').classList.add('open'); }
+function closeHelp() { document.getElementById('help-overlay').classList.remove('open'); }
+function closeHelpOnOverlay(e) { if (e.target === e.currentTarget) closeHelp(); }
+
+function newAnimation(name) {
+    return { name, framerate: 8, frames: [0] };
+}
+
+function curAnim() { return animations[currentAnimIdx]; }
+
+// ============================================================
+// SVG Loading
+// ============================================================
+
+async function loadSVG() {
+    const res  = await fetch('led-cube-base.svg');
+    const text = await res.text();
+
+    const container = document.getElementById('svg-container');
+    container.innerHTML = text;
+
+    const svg = container.querySelector('svg');
+    svg.style.cssText = 'width:auto;height:100%;max-width:100%;max-height:100%';
+
+    // Remove fixed mm dimensions so it scales freely
+    svg.removeAttribute('width');
+    svg.removeAttribute('height');
+
+    svg.querySelectorAll('path').forEach(el => {
+        const label = el.getAttribute('inkscape:label') ||
+                      el.getAttributeNS('http://www.inkscape.org/namespaces/inkscape', 'label');
+        if (!label) return;
+        const m = label.match(/^LED(\d{1,2})$/);
+        if (!m) return;
+
+        const n = parseInt(m[1], 10);
+        ledElements[n] = el;
+        el.style.cursor = 'pointer';
+
+        el.addEventListener('click', () => toggleLED(n));
+        el.addEventListener('mouseenter', () => {
+            const fv = (curAnim().frames[currentFrameIdx]) >>> 0;
+            el.style.fill = ledOn(fv, n) ? '#ffaa00' : '#441100';
+        });
+        el.addEventListener('mouseleave', () => {
+            const fv = (curAnim().frames[currentFrameIdx]) >>> 0;
+            el.style.fill = ledOn(fv, n) ? '#ff3333' : '#3d0808';
+        });
+    });
+
+    updateLEDDisplay();
+}
+
+// ============================================================
+// LED helpers
+// ============================================================
+
+function ledOn(fv, n)    { return (fv & (1 << (n - 1))) !== 0; }
+function ledSet(fv, n)   { return fv |  (1 << (n - 1)); }
+function ledClear(fv, n) { return fv & ~(1 << (n - 1)); }
+
+function toggleLED(n) {
+    const anim = curAnim();
+    const fv = anim.frames[currentFrameIdx];
+    anim.frames[currentFrameIdx] = ledOn(fv, n) ? ledClear(fv, n) : ledSet(fv, n);
+    updateLEDDisplay();
+    updateTimeline();
+}
+
+// ============================================================
+// LED group definitions
+// layer = (n-1)//9   (0=bottom, 1=mid, 2=top)
+// col   = (n-1)%3    (0=left,   1=center, 2=right)
+// row   = ((n-1)%9)//3  (0=back, 1=mid, 2=front)
+// ============================================================
+
+const LED_GROUPS = {
+    layer: [[], [], []],
+    col:   [[], [], []],
+    row:   [[], [], []],
+};
+for (let n = 1; n <= 27; n++) {
+    const p = n - 1;
+    LED_GROUPS.layer[Math.floor(p / 9)].push(n);
+    LED_GROUPS.col[p % 3].push(n);
+    LED_GROUPS.row[Math.floor((p % 9) / 3)].push(n);
+}
+
+function toggleGroup(axis, idx) {
+    const leds = LED_GROUPS[axis][idx];
+    const anim = curAnim();
+    let fv = anim.frames[currentFrameIdx];
+    const allOn = leds.every(n => ledOn(fv, n));
+    for (const n of leds) fv = allOn ? ledClear(fv, n) : ledSet(fv, n);
+    anim.frames[currentFrameIdx] = fv;
+    updateLEDDisplay();
+    updateTimeline();
+}
+
+function updateLEDDisplay() {
+    const fv = (curAnim().frames[currentFrameIdx]) >>> 0;
+    for (let n = 1; n <= 27; n++) {
+        const el = ledElements[n];
+        if (!el) continue;
+        const on = ledOn(fv, n);
+        el.style.fill   = on ? '#ff3333' : '#3d0808';
+        el.style.filter = on ? 'drop-shadow(0 0 3px #ff6666)' : 'none';
+    }
+}
+
+// ============================================================
+// Animation list
+// ============================================================
+
+function renderAnimationList() {
+    const list = document.getElementById('animation-list');
+    list.innerHTML = '';
+    animations.forEach((anim, idx) => {
+        const div = document.createElement('div');
+        div.className = 'animation-item' + (idx === currentAnimIdx ? ' active' : '');
+        div.textContent = anim.name || '(unnamed)';
+        div.title = anim.name;
+        div.onclick = () => selectAnimation(idx);
+        list.appendChild(div);
+    });
+}
+
+function selectAnimation(idx) {
+    stopPlay();
+    currentAnimIdx  = idx;
+    currentFrameIdx = 0;
+    const anim = curAnim();
+    document.getElementById('anim-name').value = anim.name;
+    document.getElementById('anim-fps').value  = anim.framerate;
+    renderAnimationList();
+    updateTimeline();
+    updateLEDDisplay();
+}
+
+function addAnimation() {
+    animations.push(newAnimation('Animation ' + (animations.length + 1)));
+    selectAnimation(animations.length - 1);
+}
+
+function removeAnimation() {
+    if (animations.length <= 1) return;
+    animations.splice(currentAnimIdx, 1);
+    currentAnimIdx = Math.min(currentAnimIdx, animations.length - 1);
+    selectAnimation(currentAnimIdx);
+}
+
+function moveAnimation(dir) {
+    const target = currentAnimIdx + dir;
+    if (target < 0 || target >= animations.length) return;
+    [animations[currentAnimIdx], animations[target]] =
+    [animations[target], animations[currentAnimIdx]];
+    currentAnimIdx = target;
+    renderAnimationList();
+}
+
+function updateAnimationName(name) {
+    curAnim().name = name;
+    renderAnimationList();
+}
+
+function updateFramerate(val) {
+    const fps = Math.max(1, Math.min(15, parseInt(val) || 1));
+    curAnim().framerate = fps;
+    if (isPlaying) { stopPlay(); startPlay(); }
+}
+
+// ============================================================
+// Timeline
+// ============================================================
+
+function updateTimeline() {
+    const anim  = curAnim();
+    const strip = document.getElementById('frames-strip');
+    strip.innerHTML = '';
+
+    anim.frames.forEach((fv, idx) => {
+        const box = document.createElement('div');
+        box.className = 'frame-box' + (idx === currentFrameIdx ? ' active' : '');
+
+        const num = document.createElement('div');
+        num.className   = 'frame-num';
+        num.textContent = idx + 1;
+
+        const hex = document.createElement('div');
+        hex.className   = 'frame-hex';
+        hex.textContent = '0x' + (fv >>> 0).toString(16).toUpperCase().padStart(7, '0');
+
+        box.appendChild(num);
+        box.appendChild(makeMiniPreview(fv));
+        box.appendChild(hex);
+
+        box.onclick = () => selectFrame(idx);
+
+        // Drag-and-drop reordering
+        box.setAttribute('draggable', 'true');
+        box.addEventListener('dragstart', e => {
+            dragSrcIdx = idx;
+            e.dataTransfer.effectAllowed = 'move';
+            // Defer adding the class so the drag image is captured first
+            requestAnimationFrame(() => box.classList.add('dragging'));
+        });
+        box.addEventListener('dragend', () => {
+            dragSrcIdx = null;
+            strip.querySelectorAll('.frame-box').forEach(b =>
+                b.classList.remove('dragging', 'drag-over'));
+        });
+        box.addEventListener('dragover', e => {
+            e.preventDefault();
+            e.dataTransfer.dropEffect = 'move';
+            if (dragSrcIdx !== null && dragSrcIdx !== idx) {
+                strip.querySelectorAll('.frame-box').forEach(b => b.classList.remove('drag-over'));
+                box.classList.add('drag-over');
+            }
+        });
+        box.addEventListener('dragleave', () => box.classList.remove('drag-over'));
+        box.addEventListener('drop', e => {
+            e.preventDefault();
+            if (dragSrcIdx === null || dragSrcIdx === idx) return;
+            const anim = curAnim();
+            const [moved] = anim.frames.splice(dragSrcIdx, 1);
+            anim.frames.splice(idx, 0, moved);
+            currentFrameIdx = idx;
+            dragSrcIdx = null;
+            updateTimeline();
+            updateLEDDisplay();
+        });
+
+        strip.appendChild(box);
+    });
+
+    const active = strip.querySelector('.frame-box.active');
+    if (active) active.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+}
+
+function makeMiniPreview(fv) {
+    // 9 columns × 3 rows: row 0 = LEDs 1-9, row 1 = LEDs 10-18, row 2 = LEDs 19-27
+    const NS = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(NS, 'svg');
+    svg.setAttribute('width',   '45');
+    svg.setAttribute('height',  '15');
+    svg.setAttribute('viewBox', '0 0 45 15');
+
+    for (let i = 0; i < 27; i++) {
+        const on   = (fv & (1 << i)) !== 0;
+        const rect = document.createElementNS(NS, 'rect');
+        rect.setAttribute('x',      (i % 9) * 5 + 1);
+        rect.setAttribute('y',      Math.floor(i / 9) * 5 + 1);
+        rect.setAttribute('width',  '3');
+        rect.setAttribute('height', '3');
+        rect.setAttribute('rx',     '1');
+        rect.setAttribute('fill',   on ? '#ff3333' : '#3d0808');
+        svg.appendChild(rect);
+    }
+    return svg;
+}
+
+function selectFrame(idx) {
+    currentFrameIdx = idx;
+    updateTimeline();
+    updateLEDDisplay();
+}
+
+// ============================================================
+// Frame operations
+// ============================================================
+
+function addFrameAfter() {
+    curAnim().frames.splice(currentFrameIdx + 1, 0, 0);
+    selectFrame(currentFrameIdx + 1);
+}
+
+function duplicateFrame() {
+    const v = curAnim().frames[currentFrameIdx];
+    curAnim().frames.splice(currentFrameIdx + 1, 0, v);
+    selectFrame(currentFrameIdx + 1);
+}
+
+function clearFrame() {
+    curAnim().frames[currentFrameIdx] = 0;
+    updateLEDDisplay();
+    updateTimeline();
+}
+
+function removeFrame() {
+    const anim = curAnim();
+    if (anim.frames.length <= 1) return;
+    anim.frames.splice(currentFrameIdx, 1);
+    selectFrame(Math.min(currentFrameIdx, anim.frames.length - 1));
+}
+
+function moveFrame(dir) {
+    const anim = curAnim();
+    const target = currentFrameIdx + dir;
+    if (target < 0 || target >= anim.frames.length) return;
+    [anim.frames[currentFrameIdx], anim.frames[target]] =
+    [anim.frames[target], anim.frames[currentFrameIdx]];
+    currentFrameIdx = target;
+    updateTimeline();
+}
+
+// ============================================================
+// Playback
+// ============================================================
+
+function togglePlay() { isPlaying ? stopPlay() : startPlay(); }
+
+function startPlay() {
+    isPlaying = true;
+    const btn = document.getElementById('play-btn');
+    btn.textContent = '⏸ Pause';
+    btn.classList.remove('primary');
+
+    const fps = curAnim().framerate;
+    playTimer = setInterval(() => {
+        currentFrameIdx = (currentFrameIdx + 1) % curAnim().frames.length;
+        updateTimeline();
+        updateLEDDisplay();
+    }, 1000 / fps);
+}
+
+function stopPlay() {
+    isPlaying = false;
+    clearInterval(playTimer);
+    playTimer = null;
+    const btn = document.getElementById('play-btn');
+    if (btn) { btn.textContent = '▶ Play'; btn.classList.add('primary'); }
+}
+
+function stepFrame(dir) {
+    stopPlay();
+    const len = curAnim().frames.length;
+    currentFrameIdx = ((currentFrameIdx + dir) % len + len) % len;
+    updateTimeline();
+    updateLEDDisplay();
+}
+
+function goToFirstFrame() { stopPlay(); selectFrame(0); }
+function goToLastFrame()  { stopPlay(); selectFrame(curAnim().frames.length - 1); }
+
+// ============================================================
+// Keyboard shortcuts
+// ============================================================
+
+document.addEventListener('keydown', e => {
+    if (e.target.tagName === 'INPUT') return;
+    if (e.key === ' ')           { e.preventDefault(); togglePlay(); }
+    if (e.key === 'ArrowLeft')   { e.preventDefault(); stepFrame(-1); }
+    if (e.key === 'ArrowRight')  { e.preventDefault(); stepFrame(1);  }
+    if (e.key === 'Delete' || e.key === 'Backspace') removeFrame();
+});
+
+// ============================================================
+// Import / Export
+// ============================================================
+
+// The file format has LED1 as the MSB (bit 26) and LED27 as LSB (bit 0),
+// which is the reverse of the internal representation (LED1 = bit 0).
+function reverseBits27(v) {
+    let r = 0;
+    for (let i = 0; i < 27; i++) if (v & (1 << i)) r |= (1 << (26 - i));
+    return r >>> 0;
+}
+
+async function downloadJSON() {
+    const data = animations.map(a => ({
+        name:      a.name,
+        frames:    a.frames.map(f => reverseBits27(f)),
+        framerate: a.framerate
+    }));
+    const json = JSON.stringify(data, null, 4);
+
+    if (window.showSaveFilePicker) {
+        try {
+            const handle = await window.showSaveFilePicker({
+                suggestedName: 'animations.json',
+                types: [{ description: 'JSON', accept: { 'application/json': ['.json'] } }],
+            });
+            const writable = await handle.createWritable();
+            await writable.write(json);
+            await writable.close();
+        } catch (e) {
+            if (e.name !== 'AbortError') throw e;
+        }
+    } else {
+        // Fallback for Firefox / Safari
+        const blob = new Blob([json], { type: 'application/json' });
+        const url  = URL.createObjectURL(blob);
+        const a    = Object.assign(document.createElement('a'), { href: url, download: 'animations.json' });
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+}
+
+function copyJSON(btn) {
+    const data = animations.map(a => ({
+        name:      a.name,
+        frames:    a.frames.map(f => reverseBits27(f)),
+        framerate: a.framerate
+    }));
+    navigator.clipboard.writeText(JSON.stringify(data, null, 4)).then(() => {
+        const orig = btn.textContent;
+        btn.textContent = '✓ Copied!';
+        setTimeout(() => { btn.textContent = orig; }, 1500);
+    });
+}
+
+function loadJSON(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = e => {
+        try {
+            const data = JSON.parse(e.target.result);
+            if (!Array.isArray(data)) throw new Error('Expected a JSON array');
+            animations = data.map(a => ({
+                name:      String(a.name || 'Unnamed'),
+                framerate: Math.max(1, Math.min(15, parseInt(a.framerate) || 8)),
+                frames:    Array.isArray(a.frames) ? a.frames.map(f => reverseBits27(f >>> 0)) : [0]
+            }));
+            if (!animations.length) animations = [newAnimation('New Animation')];
+            stopPlay();
+            currentAnimIdx  = 0;
+            currentFrameIdx = 0;
+            selectAnimation(0);
+        } catch (err) {
+            alert('Failed to load JSON: ' + err.message);
+        }
+    };
+    reader.readAsText(file);
+    event.target.value = '';
+}
+
+// ============================================================
+// Init
+// ============================================================
+
+loadSVG()
+    .then(() => {
+        renderAnimationList();
+        updateTimeline();
+        updateLEDDisplay();
+    })
+    .catch(err => {
+        document.getElementById('svg-container').textContent =
+            'Error loading SVG: ' + err.message +
+            ' (serve this page over HTTP, not file://)';
+    });
+</script>
+</body>
+</html>
