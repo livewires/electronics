@@ -15,7 +15,7 @@
 
 ## Pictures
 
-
+![LiveWires Synth](synth.jpg) 
 
 ## How it works
 

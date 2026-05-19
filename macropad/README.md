@@ -1,5 +1,10 @@
 # LiveWires Macro Pad
 
+An 8-key keyboard where each key can be programmed to do whatever you like. It's got up to 16 pages of macros
+available, and is perfect for game button combos and productivity. 
+
+![LiveWires Macro Pad](macropad.jpg) 
+
 ## Own a macro pad? Start here!
 
 Well done for building your macro pad! Here's where you can find all the information you need to start programming it yourself.

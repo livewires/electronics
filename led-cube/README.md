@@ -1,5 +1,9 @@
 # LiveWires LED Cube
 
+A 3x3x3 cube with completely programmable animations using the [animator](http://livewires.org.uk/led-cube)
+
+![LiveWires LED Cube](led-cube.jpg) 
+
 ## Own an LED cube? Start here!
 
 Well done for building your LED cube! Here's where you can find all the information about it.
