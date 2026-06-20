@@ -38,3 +38,7 @@ fp-info-cache
 *.log
 *.pdf
 
+
+# Freecad 
+*.FCBak
+
