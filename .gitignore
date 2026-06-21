@@ -19,6 +19,7 @@ fp-info-cache
 *#
 *.lck
 *.backup
+*.blend1
 
 # Netlist files (exported from Eeschema)
 *.net
@@ -37,4 +38,8 @@ fp-info-cache
 *.fls
 *.log
 *.pdf
+
+
+# Freecad 
+*.FCBak
 
