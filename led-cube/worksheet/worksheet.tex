@@ -43,6 +43,8 @@
 \usepackage{graphicx}
 \usepackage{url}
 
+\setlength{\parindent}{0pt}
+
 
 \begin{document}
 
@@ -80,12 +82,13 @@
 
 	\instruction{
 		Solder the 1N4001 diode, D1. Make sure to line up the
-		stripe on the circuit board with the black stripe on the diode.
+		stripe on the circuit board with the white stripe on the diode.
 		Check with a team member \textbf{before} soldering it.
+		See Section \ref{sec:components} for a diagram.
 	}
 
 	\instruction{
-		Solder the 1µF capacitor, C1.
+		Solder the 1µF capacitor, C2.
 	}
 
 	\instruction{
@@ -95,7 +98,7 @@
 	}
 
 	\instruction{
-		Solder the 10µF capacitor, C2. Make sure to line the up the negative 
+		Solder the 10µF capacitor, C3. Make sure to line the up the negative 
 		(-) white stripe on the capacitor with white side shown on the PCB. 
 		See Section \ref{sec:components} for a diagram.
 	}
@@ -143,7 +146,7 @@
 	}
 
 	\instruction{
-		Solder three LEDs together, joining the short legs as shown in 
+		Solder three LEDs together, joining the long legs as shown in 
 		the diagram. You will do this 9 times in total. Use the jig to 
 		get the spacing between the LEDs correct
 
@@ -178,7 +181,6 @@
 
 \end{instructions}
 
-\pagebreak
 \section{Assembly}
 \begin{instructions}
 	\instruction{
@@ -194,12 +196,17 @@
 	}
 \end{instructions}
 
+
+\pagebreak
+
 \section{Component Info}
 \label{sec:components}
 
-\explainLed
-\explainDiode
 \explainElectrolytic
+\explainLed
+\explainMosfet{ZVP2110A}
+
+\explainDiodeBlack
 
 \section{Schematic}
 
@@ -219,7 +226,7 @@
 %\includegraphics[width=\textheight,angle=90]{img/hole-colours.png}
 
 
-\section{Solderable Parts List}
+\section{Schematic Parts List}
 \label{sec:partslist}
 
 \def\arraystretch{2}

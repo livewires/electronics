@@ -19,6 +19,7 @@ fp-info-cache
 *#
 *.lck
 *.backup
+*.blend1
 
 # Netlist files (exported from Eeschema)
 *.net
